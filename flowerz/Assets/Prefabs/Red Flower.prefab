@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3389044892562867713}
   - component: {fileID: 8592292847770458783}
   - component: {fileID: 6407233419379472907}
+  - component: {fileID: 4455631081577014143}
   m_Layer: 0
   m_Name: Red Flower
   m_TagString: Untagged
@@ -107,3 +108,26 @@ CapsuleCollider:
   m_Height: 2.3943324
   m_Direction: 1
   m_Center: {x: -0.04740072, y: -0.06290299, z: -0.0000000949498}
+--- !u!136 &4455631081577014143
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8644698787880400959}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

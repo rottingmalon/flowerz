@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class flower 
+public class flower : MonoBehaviour
 {
     #region VAR
     private float growAmount;
@@ -38,6 +38,7 @@ public class flower
 
     private void fuse() 
     {
+        //observer qui verif a l'instanciation
     }
     #endregion
 }
