@@ -26,7 +26,11 @@ public class ControlsManager : MonoBehaviour
                     case 1:
                         GameObject redTemp = Instantiate(redFlower, hit.point, Quaternion.identity);
                         redTemp.AddComponent<flower>();
-                        //toto.FuseCheck(); 
+                        redTemp.GetComponent<flower>().fuseRadius = 5;
+                        if (redTemp.GetComponent<flower>().growAmount == 100) 
+                        {
+                            CheckFusions(redTemp);
+                        }
                         break;
                     case 2:
                         GameObject blueTemp = Instantiate(blueFlower, hit.point, Quaternion.identity);
@@ -41,6 +45,22 @@ public class ControlsManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void CheckFusions(GameObject newFlower) 
+    {
+        // get the radius & position
+        float newRadius = newFlower.GetComponent<flower>().fuseRadius;
+        Transform newTransform = newFlower.transform;
+
+        //create flower list
+        List<GameObject> overlappedFlowers = new List<GameObject>();
+
+        //overlapsphere to make list of nearby flowers
+
+        //compute distance between flowers
+
+        //fuse with nearest fully grown
     }
 
     private int CheckFlower() 

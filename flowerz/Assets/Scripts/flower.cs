@@ -6,8 +6,8 @@ using UnityEngine;
 public class flower : MonoBehaviour
 {
     #region VAR
-    private float growAmount;
-    private float fuseRadius;
+    public float growAmount;
+    [HideInInspector] public float fuseRadius;
     private string[] fusions;
     private string attribute;
 
@@ -29,7 +29,7 @@ public class flower : MonoBehaviour
         }
     }
 
-    private void fuse() 
+    public void fuse() 
     {
         //observer qui verif a l'instanciation
     }
