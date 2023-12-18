@@ -24,15 +24,17 @@ public class ControlsManager : MonoBehaviour
                 switch (SelectedFlower) 
                 {
                     case 1:
-                        GameObject toto = Instantiate(redFlower, hit.point, Quaternion.identity);
-                        toto.AddComponent<flower>();
+                        GameObject redTemp = Instantiate(redFlower, hit.point, Quaternion.identity);
+                        redTemp.AddComponent<flower>();
                         //toto.FuseCheck(); 
                         break;
                     case 2:
-                        Instantiate(blueFlower, hit.point, Quaternion.identity);
+                        GameObject blueTemp = Instantiate(blueFlower, hit.point, Quaternion.identity);
+                        blueTemp.AddComponent<flower>();
                         break;
                     case 3:
-                        Instantiate(greenFlower, hit.point, Quaternion.identity);
+                        GameObject greenTemp = Instantiate(greenFlower, hit.point, Quaternion.identity);
+                        greenTemp.AddComponent<flower>();
                         break;
                     default: 
                         break;

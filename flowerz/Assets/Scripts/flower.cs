@@ -16,13 +16,6 @@ public class flower : MonoBehaviour
 
     #endregion
 
-    public flower(string color, float radius) 
-    {
-        growAmount = 0f;
-        attribute = color;
-        fuseRadius = radius;
-    }
-
     #region FUN
     /*private void produce() 
     {
