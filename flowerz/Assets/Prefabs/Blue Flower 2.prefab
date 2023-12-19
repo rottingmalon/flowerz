@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8138823306688599301}
+  - component: {fileID: 3595461697987608673}
   m_Layer: 0
   m_Name: Blue Flower 2
   m_TagString: Untagged
@@ -33,6 +34,20 @@ Transform:
   - {fileID: 242428636226444643}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3595461697987608673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4351254675361902547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f269378c828d50a40b474a5f09daa38e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  growAmount: 0
+  fuseRadius: 1.1
 --- !u!1 &4505920556220531818
 GameObject:
   m_ObjectHideFlags: 0
