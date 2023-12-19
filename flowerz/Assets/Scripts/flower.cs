@@ -21,10 +21,11 @@ public class flower : MonoBehaviour
     {
     }*/
 
-    private void grow() 
+    public void grow() 
     {
         while (growAmount < 100) 
         {
+            //Debug.Log(growAmount);
             growAmount += 1;
         }
     }
@@ -34,4 +35,10 @@ public class flower : MonoBehaviour
         //observer qui verif a l'instanciation
     }
     #endregion
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.black;
+        Gizmos.DrawWireSphere(transform.position, fuseRadius);
+    }
 }
