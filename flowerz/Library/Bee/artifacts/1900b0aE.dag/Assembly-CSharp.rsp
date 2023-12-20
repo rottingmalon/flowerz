@@ -355,6 +355,7 @@
 "Assets/Scripts/CameraPivot_Isometric.cs"
 "Assets/Scripts/ControlsManager.cs"
 "Assets/Scripts/Flower.cs"
+"Assets/Scripts/FlowerManager.cs"
 -langversion:9.0
 
 /deterministic

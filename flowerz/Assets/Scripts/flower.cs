@@ -7,9 +7,12 @@ using Unity.VisualScripting;
 public class Flower : MonoBehaviour
 {
     #region VAR
-    [SerializeField]private float growAmount;
+    [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
     [SerializeField] private string attribute;
+    [SerializeField] private GameObject flowerManagerObject;
+    private FlowerManager _flowerManager;
+
     
     //private string[] fusions;
     //private float produceAmount;
@@ -19,6 +22,7 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
+        _flowerManager = flowerManagerObject.GetComponent<FlowerManager>();
         Grow();
     }
 
@@ -62,16 +66,10 @@ public class Flower : MonoBehaviour
         {
             if (flower.GetComponent<Flower>().growAmount >= 100)
             {
-                Fuse(flower);
+                _flowerManager.Fuse(gameObject, flower);
                 return;
             }
         }
-    }
-
-    private void Fuse(GameObject flower) 
-    {
-        Destroy(flower);
-        Destroy(gameObject);
     }
     #endregion
 
