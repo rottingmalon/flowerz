@@ -7,6 +7,7 @@ public class ControlsManager : MonoBehaviour
     [SerializeField] private GameObject redFlower;
     [SerializeField] private GameObject blueFlower;
     [SerializeField] private GameObject greenFlower;
+    private string[,] _attributesArray;
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
@@ -15,6 +16,13 @@ public class ControlsManager : MonoBehaviour
     {
         _selectedFlower = redFlower;
         _cam = Camera.main;
+        _attributesArray = new string[4, 4]
+        {
+            {null, "red", "blue", "green"},
+            {"red", null, "purple", "yellow"},
+            {"blue", "purple", null, "cyan"},
+            {"green", "yellow", "cyan", null}
+        };
     }
     private void Update()
     {
