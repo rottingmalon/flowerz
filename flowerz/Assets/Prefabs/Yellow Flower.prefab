@@ -156,7 +156,7 @@ MonoBehaviour:
   growAmount: 0
   fuseRadius: 0.5
   attribute: yellow
-  flowerManagerObject: {fileID: 5825677430393128339, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+  flowerManagerObject: {fileID: 0}
 --- !u!1 &5674582783759012534
 GameObject:
   m_ObjectHideFlags: 0

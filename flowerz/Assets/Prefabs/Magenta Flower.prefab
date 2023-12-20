@@ -49,7 +49,7 @@ MonoBehaviour:
   growAmount: 0
   fuseRadius: 1
   attribute: magenta
-  flowerManagerObject: {fileID: 5825677430393128339, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+  flowerManagerObject: {fileID: 0}
 --- !u!1 &6828192534547854809
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,11 +32,25 @@ public class FlowerManager : MonoBehaviour
 
     public void Fuse(GameObject flower1, GameObject flower2)
     {
-        var x = 0;
-        var y = 0;
-
         var floPos = flower1.transform.position;
 
+        var newAttribute = SelectAttribute(flower1, flower2);
+        var tempFlower = SelectFlower(newAttribute);
+        
+        var tempDir = (flower2.transform.position - floPos) / 2;
+        var tempPos = floPos + tempDir;
+
+        if (tempFlower == null) return;
+        Instantiate(tempFlower, tempPos, Quaternion.identity);
+        Destroy(flower1);
+        Destroy(flower2);
+    }
+
+    private string SelectAttribute(GameObject flower1, GameObject flower2)
+    {
+        var x = 0;
+        var y = 0;
+        
         for (var i = 0; i < 4; i++)
         {
             if (_attributesArray[i, 0] == flower1.GetComponent<Flower>().attribute)
@@ -48,16 +62,7 @@ public class FlowerManager : MonoBehaviour
                 y = i;
             }
         }
-
-        var newAttribute = _attributesArray[x, y];
-        var tempFlower = SelectFlower(newAttribute);
-        var tempDir = (flower2.transform.position - floPos) / 2;
-        var tempPos = floPos + tempDir;
-        
-        Instantiate(tempFlower, tempPos, Quaternion.identity);
-
-        //Destroy(flower1);
-        //Destroy(flower2);
+        return(_attributesArray[x, y]);
     }
 
     private GameObject SelectFlower(string attribute)

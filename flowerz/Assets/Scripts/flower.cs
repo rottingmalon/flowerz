@@ -10,7 +10,7 @@ public class Flower : MonoBehaviour
     [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
     public string attribute;
-    [SerializeField] private GameObject flowerManagerObject;
+    private GameObject _flowerManagerObject;
     private FlowerManager _flowerManager;
 
     
@@ -22,7 +22,8 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
-        _flowerManager = flowerManagerObject.GetComponent<FlowerManager>();
+        _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
+        _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
         Grow();
     }
 
