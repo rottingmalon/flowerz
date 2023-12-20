@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+using System.Linq;
+using Unity.VisualScripting;
 
-public class flower : MonoBehaviour
+public class Flower : MonoBehaviour
 {
     #region VAR
-    public float growAmount;
-    public float fuseRadius;
+    [SerializeField]private float growAmount;
+    [SerializeField] private float fuseRadius;
+    [SerializeField] private string attribute;
     
     //private string[] fusions;
-    //private string attribute;
     //private float produceAmount;
     //private float produceTime;
     #endregion
@@ -36,7 +37,7 @@ public class flower : MonoBehaviour
         //create flower list
         List<GameObject> overlappedFlowers = new List<GameObject>();
 
-        //overlapsphere to make list of all fuseRadiuses in range
+        //overlap sphere to make list of all fuse radii in range
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, fuseRadius);
         foreach (var hitCollider in hitColliders)
         {
@@ -51,20 +52,30 @@ public class flower : MonoBehaviour
             Debug.Log(flower);
         }
 
-        //compute distances between parents
-
         //sort list by distance
+        overlappedFlowers = overlappedFlowers.OrderBy(
+            x => Vector2.Distance(this.transform.position,x.transform.position)
+        ).ToList();
 
         //fuse with nearest fully grown
+        foreach (var flower in overlappedFlowers)
+        {
+            if (flower.GetComponent<Flower>().growAmount >= 100)
+            {
+                Fuse(flower);
+                return;
+            }
+        }
     }
 
-    public void fuse() 
+    private void Fuse(GameObject flower) 
     {
-        //observer qui verif a l'instanciation
+        Destroy(flower);
+        Destroy(gameObject);
     }
     #endregion
 
-    void OnDrawGizmos()
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, fuseRadius);

@@ -43,11 +43,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 273033154655674692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f269378c828d50a40b474a5f09daa38e, type: 3}
+  m_Script: {fileID: 11500000, guid: 360a65d288fc2a547bdbd7e80c0aeb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   growAmount: 0
   fuseRadius: 0.8
+  attribute: Green
 --- !u!1 &3274579137896100205
 GameObject:
   m_ObjectHideFlags: 0
