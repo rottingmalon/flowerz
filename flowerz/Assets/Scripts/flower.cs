@@ -9,7 +9,7 @@ public class Flower : MonoBehaviour
     #region VAR
     [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
-    [SerializeField] private string attribute;
+    public string attribute;
     [SerializeField] private GameObject flowerManagerObject;
     private FlowerManager _flowerManager;
 

@@ -559,6 +559,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: FlowerManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: redFlower
+      value: 
+      objectReference: {fileID: 947726161960050861, guid: cfe3e2f40db3ad644a252b92cc297c12, type: 3}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: blueFlower
+      value: 
+      objectReference: {fileID: 4351254675361902547, guid: 7320f88458e64e4489a7c9b65d6c68b0, type: 3}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: cyanFlower
+      value: 
+      objectReference: {fileID: 1755877337748059960, guid: 566bc2c788d0be44dacd86ea24a96b81, type: 3}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: greenFlower
+      value: 
+      objectReference: {fileID: 273033154655674692, guid: 6f326129ecca3ec47b060ee6baa7b4bd, type: 3}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: yellowFlower
+      value: 
+      objectReference: {fileID: 3412400485045877499, guid: 94d861e28ef6aa04c92826bcf252d195, type: 3}
+    - target: {fileID: 6018068789153203475, guid: 687d193d261adf140996d7d657f5e74a, type: 3}
+      propertyPath: magentaFlower
+      value: 
+      objectReference: {fileID: 6692757176113427421, guid: 021557363d2dc584fa5b3bfb775d9945, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
