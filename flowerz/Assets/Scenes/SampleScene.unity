@@ -323,7 +323,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e808018741da5a8449ef09a209b14f4d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -403,6 +403,13 @@ MonoBehaviour:
   magentaFlower: {fileID: 6692757176113427421, guid: 021557363d2dc584fa5b3bfb775d9945, type: 3}
   yellowFlower: {fileID: 3412400485045877499, guid: 94d861e28ef6aa04c92826bcf252d195, type: 3}
   cyanFlower: {fileID: 1755877337748059960, guid: 566bc2c788d0be44dacd86ea24a96b81, type: 3}
+  pinkFlower: {fileID: 6692757176113427421, guid: c8922470ea0b62948a8b043135680035, type: 3}
+  purpleFlower: {fileID: 6692757176113427421, guid: c026db8a34a14dd4989353b569b3fbb6, type: 3}
+  skyblueFlower: {fileID: 6692757176113427421, guid: 6eff7b4c08b60c74dafddf39b735de53, type: 3}
+  turquoiseFlower: {fileID: 6692757176113427421, guid: 08b2c362277911348a5bd454d428ffe9, type: 3}
+  applegreenFlower: {fileID: 6692757176113427421, guid: af78f4ac5df576644a43506781b3e88b, type: 3}
+  orangeFlower: {fileID: 6692757176113427421, guid: 2b09dfc31f350b1438ddcd701ecc07d7, type: 3}
+  whiteFlower: {fileID: 6692757176113427421, guid: 3e811ff7a17945e46a10e5c27a784503, type: 3}
 --- !u!4 &854882264
 Transform:
   m_ObjectHideFlags: 0

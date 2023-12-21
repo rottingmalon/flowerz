@@ -14,6 +14,13 @@ public class FlowerManager : MonoBehaviour
     [SerializeField] private GameObject magentaFlower;
     [SerializeField] private GameObject yellowFlower;
     [SerializeField] private GameObject cyanFlower;
+    [SerializeField] private GameObject pinkFlower;
+    [SerializeField] private GameObject purpleFlower;
+    [SerializeField] private GameObject skyblueFlower;
+    [SerializeField] private GameObject turquoiseFlower;
+    [SerializeField] private GameObject applegreenFlower;
+    [SerializeField] private GameObject orangeFlower;
+    [SerializeField] private GameObject whiteFlower;
     #endregion
     
     private string[,] _attributesArray;
@@ -21,12 +28,15 @@ public class FlowerManager : MonoBehaviour
     #endregion
     private void Start()
     {
-        _attributesArray = new string[4, 4]
+        _attributesArray = new string[7, 7]
         {
-            {null, "red", "blue", "green"},
-            {"red", null, "magenta", "yellow"},
-            {"blue", "magenta", null, "cyan"},
-            {"green", "yellow", "cyan", null}
+            {null, "red", "blue", "green", "magenta", "yellow", "cyan"},
+            {"red", null, "magenta", "yellow", "pink", "orange", "white"},
+            {"blue", "magenta", null, "cyan", "purple", "white", "skyblue"},
+            {"green", "yellow", "cyan", null, "white", "applegreen", "turquoise"},
+            {"magenta", "pink", "purple", "white", null, null, null},
+            {"yellow", "orange", "white", "applegreen", null, null, null},
+            {"cyan", "white", "skyblue", "turquoise", null, null, null},
         };
     }
 
@@ -51,7 +61,7 @@ public class FlowerManager : MonoBehaviour
         var x = 0;
         var y = 0;
         
-        for (var i = 0; i < 4; i++)
+        for (var i = 0; i < 7; i++)
         {
             if (_attributesArray[i, 0] == flower1.GetComponent<Flower>().attribute)
             {
@@ -79,6 +89,27 @@ public class FlowerManager : MonoBehaviour
                 break;
             case ("cyan"):
                 fusion = cyanFlower;
+                break;
+            case ("pink"):
+                fusion = pinkFlower;
+                break;
+            case ("purple"):
+                fusion = purpleFlower;
+                break;
+            case ("skyblue"):
+                fusion = skyblueFlower;
+                break;
+            case ("turquoise"):
+                fusion = turquoiseFlower;
+                break;
+            case ("applegreen"):
+                fusion = applegreenFlower;
+                break;
+            case ("orange"):
+                fusion = orangeFlower;
+                break;
+            case ("white"):
+                fusion = whiteFlower;
                 break;
             default:
                 break;

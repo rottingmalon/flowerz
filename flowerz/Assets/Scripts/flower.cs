@@ -53,10 +53,10 @@ public class Flower : MonoBehaviour
             }
         }    
 
-        foreach (var flower in overlappedFlowers)
+        /*foreach (var flower in overlappedFlowers)
         {
             Debug.Log(flower);
-        }
+        }*/
 
         //sort list by distance
         overlappedFlowers = overlappedFlowers.OrderBy(

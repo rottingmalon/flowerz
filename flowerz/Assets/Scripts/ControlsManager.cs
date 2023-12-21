@@ -37,7 +37,8 @@ public class ControlsManager : MonoBehaviour
         var r = _cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (!Physics.Raycast(r, out hit) && CompareTag("Ground")) return;
+        if (!Physics.Raycast(r, out hit)) return;
+        if (!hit.collider.CompareTag("Ground")) return;
         Instantiate(_selectedFlower, hit.point, Quaternion.identity);
     }
 }
