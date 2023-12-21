@@ -54,6 +54,7 @@ MonoBehaviour:
   - green
   - magenta
   - yellow
+  easeMode: 27
   attribute: cyan
 --- !u!1 &5044644565916683741
 GameObject:

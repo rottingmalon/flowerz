@@ -48,6 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growAmount: 0
   fuseRadius: 1
+  fusions: []
+  easeMode: 30
   attribute: purple
 --- !u!1 &6828192534547854809
 GameObject:

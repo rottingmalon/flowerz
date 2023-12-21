@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using DG.Tweening;
 using Unity.VisualScripting;
 
 public class Flower : MonoBehaviour
@@ -10,6 +12,8 @@ public class Flower : MonoBehaviour
     [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
     [SerializeField] private List<string> fusions;
+    [SerializeField] private Ease easeMode;
+    
     public string attribute;
     private GameObject _flowerManagerObject;
     private FlowerManager _flowerManager;
@@ -21,23 +25,30 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
+        DOTween.Init();
+        transform.DOScaleY(0, 0f);
         _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
         _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
         Grow();
     }
 
+    private void Update()
+    {
+            transform.DOScaleY(growAmount, 0f);
+    }
+
     private void Grow()
     {
-        while (growAmount < 100) 
-        {
-            //DO TWEEN growAmount
-            //Debug.Log(growAmount);
-            growAmount += 1;
-        }
-        StartCoroutine(WaitToCheck());
+        DOTween.To(() => growAmount, x => growAmount = x, 1f, 1f).SetEase(easeMode).OnComplete(Launch()).SetAutoKill(true);
     }
-    
-    private void CheckFusions() 
+
+    private TweenCallback Launch()
+    {
+        Invoke(nameof(CheckFusions), 1.5f);
+        return null;
+    }
+
+    private void CheckFusions()
     {
         //create flower list
         List<GameObject> overlappedFlowers = new List<GameObject>();
@@ -60,7 +71,7 @@ public class Flower : MonoBehaviour
         //fuse with nearest possible & fully grown
         foreach (var flower in overlappedFlowers)
         {
-            if (flower.GetComponent<Flower>().growAmount >= 100)
+            if (flower.GetComponent<Flower>().growAmount >= 1)
             {
                 foreach (var fusionAttribute in fusions)
                 {
@@ -79,11 +90,5 @@ public class Flower : MonoBehaviour
     {
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, fuseRadius);
-    }
-
-    IEnumerator WaitToCheck()
-    {
-        yield return new WaitForSeconds(0.5f);
-        CheckFusions();
     }
 }
