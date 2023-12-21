@@ -48,6 +48,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growAmount: 0
   fuseRadius: 2
+  fusions:
+  - red
+  - blue
+  - magenta
+  - yellow
+  - cyan
   attribute: green
 --- !u!1 &5858100355253780880
 GameObject:

@@ -45,15 +45,19 @@ public class FlowerManager : MonoBehaviour
         var floPos = flower1.transform.position;
 
         var newAttribute = SelectAttribute(flower1, flower2);
+        
+        if (newAttribute == null) return;
+        Debug.Log(flower1.name + "," + flower2.name + "=" + newAttribute );
+        
         var tempFlower = SelectFlower(newAttribute);
         
         var tempDir = (flower2.transform.position - floPos) / 2;
         var tempPos = floPos + tempDir;
 
         if (tempFlower == null) return;
-        Instantiate(tempFlower, tempPos, Quaternion.identity);
         Destroy(flower1);
         Destroy(flower2);
+        Instantiate(tempFlower, tempPos, Quaternion.identity);
     }
 
     private string SelectAttribute(GameObject flower1, GameObject flower2)

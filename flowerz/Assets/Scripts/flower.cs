@@ -9,12 +9,11 @@ public class Flower : MonoBehaviour
     #region VAR
     [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
+    [SerializeField] private List<string> fusions;
     public string attribute;
     private GameObject _flowerManagerObject;
     private FlowerManager _flowerManager;
-
     
-    //private string[] fusions;
     //private float produceAmount;
     //private float produceTime;
     #endregion
@@ -35,7 +34,7 @@ public class Flower : MonoBehaviour
             //Debug.Log(growAmount);
             growAmount += 1;
         }
-        CheckFusions();
+        StartCoroutine(WaitToCheck());
     }
     
     private void CheckFusions() 
@@ -51,25 +50,26 @@ public class Flower : MonoBehaviour
             {
                 overlappedFlowers.Add(hitCollider.transform.parent.gameObject);
             }
-        }    
-
-        /*foreach (var flower in overlappedFlowers)
-        {
-            Debug.Log(flower);
-        }*/
+        } 
 
         //sort list by distance
         overlappedFlowers = overlappedFlowers.OrderBy(
             x => Vector2.Distance(this.transform.position,x.transform.position)
         ).ToList();
 
-        //fuse with nearest fully grown
+        //fuse with nearest possible & fully grown
         foreach (var flower in overlappedFlowers)
         {
             if (flower.GetComponent<Flower>().growAmount >= 100)
             {
-                _flowerManager.Fuse(gameObject, flower);
-                return;
+                foreach (var fusionAttribute in fusions)
+                {
+                    if (flower.GetComponent<Flower>().attribute == fusionAttribute)
+                    {
+                        _flowerManager.Fuse(gameObject, flower);
+                        return;
+                    }
+                }
             }
         }
     }
@@ -79,5 +79,11 @@ public class Flower : MonoBehaviour
     {
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, fuseRadius);
+    }
+
+    IEnumerator WaitToCheck()
+    {
+        yield return new WaitForSeconds(0.5f);
+        CheckFusions();
     }
 }
