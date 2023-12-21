@@ -436,6 +436,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -484,7 +485,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 45.3
+  field of view: 45
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -517,6 +518,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 178396932}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbcadd2d2f865446b273381fd15c0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectMaterial: {fileID: 2100000, guid: fe52357b3d4069d45933d696ee9283f3, type: 2}
 --- !u!1 &1485971313
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +631,7 @@ MonoBehaviour:
   redFlower: {fileID: 947726161960050861, guid: cfe3e2f40db3ad644a252b92cc297c12, type: 3}
   blueFlower: {fileID: 4351254675361902547, guid: 7320f88458e64e4489a7c9b65d6c68b0, type: 3}
   greenFlower: {fileID: 273033154655674692, guid: 6f326129ecca3ec47b060ee6baa7b4bd, type: 3}
+  scrollSpeed: 10
 --- !u!4 &1624921502
 Transform:
   m_ObjectHideFlags: 0
