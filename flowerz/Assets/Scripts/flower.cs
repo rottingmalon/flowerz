@@ -31,6 +31,7 @@ public class Flower : MonoBehaviour
     {
         while (growAmount < 100) 
         {
+            //DO TWEEN growAmount
             //Debug.Log(growAmount);
             growAmount += 1;
         }
