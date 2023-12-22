@@ -9,11 +9,12 @@ using Unity.VisualScripting;
 public class Flower : MonoBehaviour
 {
     #region VAR
-    [SerializeField] private float growAmount;
     [SerializeField] private float fuseRadius;
     [SerializeField] private List<string> fusions;
     [SerializeField] private Ease easeMode;
+    [SerializeField] private float growDuration;
     
+    private float _growAmount;
     public string attribute;
     private GameObject _flowerManagerObject;
     private FlowerManager _flowerManager;
@@ -30,22 +31,17 @@ public class Flower : MonoBehaviour
         _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
         _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
         Grow();
+        Invoke(nameof(CheckFusions), growDuration);
     }
 
     private void Update()
     {
-            transform.DOScaleY(growAmount, 0f);
+            transform.DOScaleY(_growAmount, 0f);
     }
 
     private void Grow()
     {
-        DOTween.To(() => growAmount, x => growAmount = x, 1f, 1f).SetEase(easeMode).OnComplete(Launch()).SetAutoKill(true);
-    }
-
-    private TweenCallback Launch()
-    {
-        Invoke(nameof(CheckFusions), 1.5f);
-        return null;
+        DOTween.To(() => _growAmount, x => _growAmount = x, 1f, growDuration).SetEase(easeMode);
     }
 
     private void CheckFusions()
@@ -71,7 +67,7 @@ public class Flower : MonoBehaviour
         //fuse with nearest possible & fully grown
         foreach (var flower in overlappedFlowers)
         {
-            if (flower.GetComponent<Flower>().growAmount >= 1)
+            if (flower.GetComponent<Flower>()._growAmount >= 1)
             {
                 foreach (var fusionAttribute in fusions)
                 {

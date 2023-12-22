@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360a65d288fc2a547bdbd7e80c0aeb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growAmount: 0
   fuseRadius: 1
   fusions:
   - red
@@ -55,6 +54,7 @@ MonoBehaviour:
   - yellow
   - cyan
   easeMode: 27
+  growDuration: 2
   attribute: magenta
 --- !u!1 &6828192534547854809
 GameObject:
