@@ -11,7 +11,6 @@ public class ControlsManager : MonoBehaviour
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
-    private float _fov;
 
     private void Start()
     {
@@ -34,7 +33,8 @@ public class ControlsManager : MonoBehaviour
             _selectedFlower = greenFlower;
         }
         #endregion
-
+    
+        #region CAM
         if (_cam.fieldOfView <= 45f && _cam.fieldOfView >= 30f)
         {
             _cam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
@@ -47,6 +47,7 @@ public class ControlsManager : MonoBehaviour
         {
             _cam.fieldOfView = 30f;
         }
+        #endregion
 
         if (!Input.GetMouseButtonDown(0)) return;
         var r = _cam.ScreenPointToRay(Input.mousePosition);

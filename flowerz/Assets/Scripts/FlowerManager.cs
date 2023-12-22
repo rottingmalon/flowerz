@@ -21,6 +21,7 @@ public class FlowerManager : MonoBehaviour
     [SerializeField] private GameObject applegreenFlower;
     [SerializeField] private GameObject orangeFlower;
     [SerializeField] private GameObject whiteFlower;
+    [SerializeField] private GameObject blackFlower;
     #endregion
     
     private string[,] _attributesArray;
@@ -28,15 +29,16 @@ public class FlowerManager : MonoBehaviour
     #endregion
     private void Start()
     {
-        _attributesArray = new string[7, 7]
+        _attributesArray = new string[8, 8]
         {
-            {null, "red", "blue", "green", "magenta", "yellow", "cyan"},
-            {"red", null, "magenta", "yellow", "pink", "orange", "white"},
-            {"blue", "magenta", null, "cyan", "purple", "white", "skyblue"},
-            {"green", "yellow", "cyan", null, "white", "applegreen", "turquoise"},
-            {"magenta", "pink", "purple", "white", null, null, null},
-            {"yellow", "orange", "white", "applegreen", null, null, null},
-            {"cyan", "white", "skyblue", "turquoise", null, null, null},
+            {null, "red", "blue", "green", "magenta", "yellow", "cyan", "white"},
+            {"red", null, "magenta", "yellow", "pink", "orange", "white", null},
+            {"blue", "magenta", null, "cyan", "purple", "white", "skyblue", null},
+            {"green", "yellow", "cyan", null, "white", "applegreen", "turquoise", null},
+            {"magenta", "pink", "purple", "white", null, null, null, null},
+            {"yellow", "orange", "white", "applegreen", null, null, null, null},
+            {"cyan", "white", "skyblue", "turquoise", null, null, null, null},
+            {"white", null, null, null, null, null, null, "black"},
         };
     }
 
@@ -65,7 +67,7 @@ public class FlowerManager : MonoBehaviour
         var x = 0;
         var y = 0;
         
-        for (var i = 0; i < 7; i++)
+        for (var i = 0; i < 8; i++)
         {
             if (_attributesArray[i, 0] == flower1.GetComponent<Flower>().attribute)
             {
@@ -114,6 +116,9 @@ public class FlowerManager : MonoBehaviour
                 break;
             case ("white"):
                 fusion = whiteFlower;
+                break;
+            case ("black"):
+                fusion = blackFlower;
                 break;
             default:
                 break;

@@ -47,8 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growAmount: 0
-  fuseRadius: 1
-  fusions: []
+  fuseRadius: 0.4
+  fusions:
+  - white
   easeMode: 10
   attribute: white
 --- !u!1 &6828192534547854809
@@ -102,7 +103,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8670003017591850928
 PrefabInstance:
