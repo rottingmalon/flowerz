@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 321}
   m_MaxSize: {x: 10000, y: 10000}
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 353
     height: 596
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -412,9 +412,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 30fbffff74590000
+      m_SelectedIDs: 666cffff
+      m_LastClickedID: -37786
+      m_ExpandedIDs: 30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -768,9 +768,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.554826, y: 43.934013, z: -20.31458}
+    m_Target: {x: 4.453862, y: 1.0373793, z: -0.708436}
     speed: 2
-    m_Value: {x: -2.554826, y: 43.934013, z: -20.31458}
+    m_Value: {x: 4.453862, y: 1.0373793, z: -0.708436}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -816,20 +816,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.500062, y: -0.022108354, z: 0.012731302, w: 0.86571044}
+    m_Target: {x: 0.20126438, y: -0.5672592, z: 0.14525913, w: 0.7853511}
     speed: 2
-    m_Value: {x: 0.50002015, y: -0.022106504, z: 0.012730236, w: 0.865638}
+    m_Value: {x: 0.20124759, y: -0.56721187, z: 0.14524701, w: 0.7852856}
   m_Size:
-    m_Target: 11.997071
+    m_Target: 2.7126322
     speed: 2
-    m_Value: 11.997071
+    m_Value: 2.7126322
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.1204399
-    m_SpeedNormalized: 0.55999994
+    m_Speed: 1.8400793
+    m_SpeedNormalized: 0.91999966
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -907,9 +907,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a45d0000
-    m_LastClickedID: 23972
-    m_ExpandedIDs: 00000000985d000000ca9a3b
+    m_SelectedIDs: 7ca90000
+    m_LastClickedID: 43388
+    m_ExpandedIDs: 0000000070a9000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -937,7 +937,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000985d0000
+    m_ExpandedIDs: 0000000070a90000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -964,7 +964,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
