@@ -7,7 +7,7 @@ public class ControlsManager : MonoBehaviour
     [SerializeField] private GameObject redFlower;
     [SerializeField] private GameObject blueFlower;
     [SerializeField] private GameObject greenFlower;
-    [SerializeField] private float scrollSpeed = 20;
+    [SerializeField] private float scrollSpeed = 10;
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
