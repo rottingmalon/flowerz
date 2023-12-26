@@ -8,18 +8,25 @@ public class FlowerManager : MonoBehaviour
     #region VAR
     
     #region FLOWERZ
+    [Header("Basic")]
     [SerializeField] private GameObject redFlower;
     [SerializeField] private GameObject blueFlower;
-    [SerializeField] private GameObject greenFlower;
-    [SerializeField] private GameObject magentaFlower;
     [SerializeField] private GameObject yellowFlower;
-    [SerializeField] private GameObject cyanFlower;
-    [SerializeField] private GameObject pinkFlower;
+
+    [Header("Advanced")]
     [SerializeField] private GameObject purpleFlower;
-    [SerializeField] private GameObject skyblueFlower;
-    [SerializeField] private GameObject turquoiseFlower;
-    [SerializeField] private GameObject applegreenFlower;
+    [SerializeField] private GameObject greenFlower;
     [SerializeField] private GameObject orangeFlower;
+    
+    [Header("Advanced +")]
+    [SerializeField] private GameObject turquoiseFlower;
+    [SerializeField] private GameObject lightOrangeFlower;
+    [SerializeField] private GameObject darkOrangeFlower;
+    [SerializeField] private GameObject applegreenFlower;
+    [SerializeField] private GameObject crimsonFlower;
+    [SerializeField] private GameObject darkBlueFlower;
+
+    [Header("Special")]
     [SerializeField] private GameObject whiteFlower;
     [SerializeField] private GameObject blackFlower;
     #endregion
@@ -31,13 +38,13 @@ public class FlowerManager : MonoBehaviour
     {
         _attributesArray = new string[8, 8]
         {
-            {null, "red", "blue", "green", "magenta", "yellow", "cyan", "white"},
-            {"red", null, "magenta", "yellow", "pink", "orange", "white", null},
-            {"blue", "magenta", null, "cyan", "purple", "white", "skyblue", null},
-            {"green", "yellow", "cyan", null, "white", "applegreen", "turquoise", null},
-            {"magenta", "pink", "purple", "white", null, null, null, null},
-            {"yellow", "orange", "white", "applegreen", null, null, null, null},
-            {"cyan", "white", "skyblue", "turquoise", null, null, null, null},
+            {null, "red", "blue", "yellow", "purple", "green", "orange", "white"},
+            {"red", null, "purple", "orange", "crimson", "white", "darkorange", null},
+            {"blue", "purple", null, "green", "darkblue", "turquoise", "white", null},
+            {"yellow", "orange", "green", null, "white", "applegreen", "lightorange", null},
+            {"purple", "crimson", "darkblue", "white", null, null, null, null},
+            {"green", "white", "turquoise", "applegreen", null, null, null, null},
+            {"orange", "darkorange", "white", "darkorange", null, null, null, null},
             {"white", null, null, null, null, null, null, "black"},
         };
     }
@@ -87,23 +94,14 @@ public class FlowerManager : MonoBehaviour
 
         switch (attribute)
         {
-            case ("magenta"):
-                fusion = magentaFlower;
-                break;
-            case ("yellow"):
-                fusion = yellowFlower;
-                break;
-            case ("cyan"):
-                fusion = cyanFlower;
-                break;
-            case ("pink"):
-                fusion = pinkFlower;
-                break;
             case ("purple"):
                 fusion = purpleFlower;
                 break;
-            case ("skyblue"):
-                fusion = skyblueFlower;
+            case ("green"):
+                fusion = greenFlower;
+                break;
+            case ("orange"):
+                fusion = orangeFlower;
                 break;
             case ("turquoise"):
                 fusion = turquoiseFlower;
@@ -111,8 +109,17 @@ public class FlowerManager : MonoBehaviour
             case ("applegreen"):
                 fusion = applegreenFlower;
                 break;
-            case ("orange"):
-                fusion = orangeFlower;
+            case ("lightorange"):
+                fusion = lightOrangeFlower;
+                break;
+            case ("darkorange"):
+                fusion = darkOrangeFlower;
+                break;
+            case ("crimson"):
+                fusion = crimsonFlower;
+                break;
+            case ("darkblue"):
+                fusion = darkBlueFlower;
                 break;
             case ("white"):
                 fusion = whiteFlower;

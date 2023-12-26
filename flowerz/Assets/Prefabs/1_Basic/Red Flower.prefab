@@ -49,10 +49,10 @@ MonoBehaviour:
   fuseRadius: 2
   fusions:
   - blue
-  - green
-  - magenta
   - yellow
-  - cyan
+  - purple
+  - green
+  - orange
   easeMode: 24
   growDuration: 1
   attribute: red

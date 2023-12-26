@@ -15,7 +15,7 @@ C:/Users/Eva/Documents/GitHub/flowerz/flowerz
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-55374
+59603
 Successfully changed project path to: C:/Users/Eva/Documents/GitHub/flowerz/flowerz
 C:/Users/Eva/Documents/GitHub/flowerz/flowerz
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Eva/Documents/GitHub/flowerz/flowerz
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8804] Host "[IP] 192.168.2.114 [Port] 0 [Flags] 2 [Guid] 3800825123 [EditorId] 3800825123 [Version] 1048832 [Id] WindowsEditor(7,Xxsniper420SpookySupremeKillStreakerxX) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10788] Host "[IP] 192.168.2.114 [Port] 0 [Flags] 2 [Guid] 931516108 [EditorId] 931516108 [Version] 1048832 [Id] WindowsEditor(7,Xxsniper420SpookySupremeKillStreakerxX) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8804] Host "[IP] 192.168.2.114 [Port] 0 [Flags] 2 [Guid] 3800825123 [EditorId] 3800825123 [Version] 1048832 [Id] WindowsEditor(7,Xxsniper420SpookySupremeKillStreakerxX) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10788] Host "[IP] 192.168.2.114 [Port] 0 [Flags] 2 [Guid] 931516108 [EditorId] 931516108 [Version] 1048832 [Id] WindowsEditor(7,Xxsniper420SpookySupremeKillStreakerxX) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 319.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 54.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.9f1 (ea401c316338)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56776
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56260
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.050010 seconds.
-- Loaded All Assemblies, in  4.019 seconds
+Registered in 0.034281 seconds.
+- Loaded All Assemblies, in  1.221 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.073 seconds
-Domain Reload Profiling: 6059ms
-	BeginReloadAssembly (677ms)
+- Finished resetting the current domain, in  1.094 seconds
+Domain Reload Profiling: 2308ms
+	BeginReloadAssembly (442ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (1330ms)
-	RebuildNativeTypeToScriptingClass (111ms)
-	initialDomainReloadingComplete (375ms)
-	LoadAllAssembliesAndSetupDomain (1491ms)
-		LoadAssemblies (642ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (126ms)
+	RebuildNativeTypeToScriptingClass (40ms)
+	initialDomainReloadingComplete (188ms)
+	LoadAllAssembliesAndSetupDomain (416ms)
+		LoadAssemblies (434ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1484ms)
-			TypeCache.Refresh (1460ms)
-				TypeCache.ScanAssembly (1383ms)
-			ScanForSourceGeneratedMonoScriptInfo (16ms)
-			ResolveRequiredComponents (7ms)
-	FinalizeReload (2074ms)
+		AnalyzeDomain (411ms)
+			TypeCache.Refresh (408ms)
+				TypeCache.ScanAssembly (370ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1096ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1721ms)
+		SetupLoadedEditorAssemblies (857ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (55ms)
-			SetLoadedEditorAssemblies (40ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (20ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (8ms)
-			ProcessInitializeOnLoadAttributes (1214ms)
-			ProcessInitializeOnLoadMethodAttributes (404ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (496ms)
+			ProcessInitializeOnLoadMethodAttributes (308ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 6059ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  7.785 seconds
-Refreshing native plugins compatible for Editor in 20.49 ms, found 3 plugins.
+- Loaded All Assemblies, in  6.890 seconds
+Refreshing native plugins compatible for Editor in 29.55 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.493 seconds
-Domain Reload Profiling: 12265ms
-	BeginReloadAssembly (1142ms)
+- Finished resetting the current domain, in  4.503 seconds
+Domain Reload Profiling: 11468ms
+	BeginReloadAssembly (1312ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (35ms)
+		DisableScriptedObjects (23ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (88ms)
-	RebuildCommonClasses (270ms)
-	RebuildNativeTypeToScriptingClass (110ms)
-	initialDomainReloadingComplete (260ms)
-	LoadAllAssembliesAndSetupDomain (5988ms)
-		LoadAssemblies (4149ms)
+		CreateAndSetChildDomain (137ms)
+	RebuildCommonClasses (272ms)
+	RebuildNativeTypeToScriptingClass (86ms)
+	initialDomainReloadingComplete (492ms)
+	LoadAllAssembliesAndSetupDomain (4802ms)
+		LoadAssemblies (3884ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2484ms)
-			TypeCache.Refresh (1965ms)
-				TypeCache.ScanAssembly (1706ms)
-			ScanForSourceGeneratedMonoScriptInfo (336ms)
-			ResolveRequiredComponents (174ms)
-	FinalizeReload (4495ms)
+		AnalyzeDomain (1681ms)
+			TypeCache.Refresh (1416ms)
+				TypeCache.ScanAssembly (1222ms)
+			ScanForSourceGeneratedMonoScriptInfo (221ms)
+			ResolveRequiredComponents (39ms)
+	FinalizeReload (4504ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2982ms)
+		SetupLoadedEditorAssemblies (3038ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (52ms)
-			SetLoadedEditorAssemblies (45ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (397ms)
-			ProcessInitializeOnLoadAttributes (2256ms)
-			ProcessInitializeOnLoadMethodAttributes (148ms)
-			AfterProcessingInitializeOnLoad (83ms)
-			EditorAssembliesLoaded (1ms)
+			BeforeProcessingInitializeOnLoad (362ms)
+			ProcessInitializeOnLoadAttributes (2410ms)
+			ProcessInitializeOnLoadMethodAttributes (163ms)
+			AfterProcessingInitializeOnLoad (67ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (88ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.52 seconds
-Refreshing native plugins compatible for Editor in 17.92 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (104ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
+Refreshing native plugins compatible for Editor in 9.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3091 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 33 unused Assets / (56.3 KB). Loaded Objects now: 3572.
-Memory consumption went from 125.0 MB to 124.9 MB.
-Total: 7.413600 ms (FindLiveObjects: 0.425800 ms CreateObjectMapping: 0.334000 ms MarkObjects: 6.219400 ms  DeleteObjects: 0.432400 ms)
+Memory consumption went from 125.3 MB to 125.3 MB.
+Total: 8.050300 ms (FindLiveObjects: 0.375400 ms CreateObjectMapping: 0.336600 ms MarkObjects: 6.773100 ms  DeleteObjects: 0.563600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -180,646 +180,214 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 192950.930707 seconds.
-  path: Assets/Models/plank.fbx
-  artifactKey: Guid(1b1a5bcce0be7764fbc2c0fb28349459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/plank.fbx using Guid(1b1a5bcce0be7764fbc2c0fb28349459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1891821f355dfd5db94d2b9e65e162') in 0.896775 seconds
+  Time since last request: 209576.205548 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkBlue Flower.prefab
+  artifactKey: Guid(6eff7b4c08b60c74dafddf39b735de53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkBlue Flower.prefab using Guid(6eff7b4c08b60c74dafddf39b735de53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057f3a12b8e5bed1b6e0fab26d07a9a9') in 0.276217 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.784 seconds
-Refreshing native plugins compatible for Editor in 193.79 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  8.595 seconds
-Domain Reload Profiling: 10369ms
-	BeginReloadAssembly (498ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (26ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (121ms)
-	RebuildCommonClasses (102ms)
-	RebuildNativeTypeToScriptingClass (43ms)
-	initialDomainReloadingComplete (172ms)
-	LoadAllAssembliesAndSetupDomain (958ms)
-		LoadAssemblies (1136ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (89ms)
-			TypeCache.Refresh (21ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (63ms)
-	FinalizeReload (8596ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1680ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (40ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (192ms)
-			ProcessInitializeOnLoadAttributes (1184ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (100ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (64ms)
-Refreshing native plugins compatible for Editor in 10.24 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (30.5 KB). Loaded Objects now: 3619.
-Memory consumption went from 128.3 MB to 128.3 MB.
-Total: 6.727500 ms (FindLiveObjects: 0.491100 ms CreateObjectMapping: 0.375200 ms MarkObjects: 5.779700 ms  DeleteObjects: 0.080100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Number of asset objects unloaded after import = 21
 ========================================================================
 Received Import Request.
-  Time since last request: 18.090655 seconds.
-  path: Assets/Prefabs/3_Advanced +/Purple Flower.prefab
-  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/3_Advanced +/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6fb9324f49771e82e9d49aeaa04004') in 0.294724 seconds
+  Time since last request: 20.423414 seconds.
+  path: Assets/Materials/M_pixelation.mat
+  artifactKey: Guid(fe52357b3d4069d45933d696ee9283f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/M_pixelation.mat using Guid(fe52357b3d4069d45933d696ee9283f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb55b0d3897800c91e1b76a7eb3f88d') in 0.118156 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.608 seconds
-Refreshing native plugins compatible for Editor in 118.92 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 26.008 seconds
-Domain Reload Profiling: 28627ms
-	BeginReloadAssembly (614ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (113ms)
-	RebuildCommonClasses (138ms)
-	RebuildNativeTypeToScriptingClass (128ms)
-	initialDomainReloadingComplete (135ms)
-	LoadAllAssembliesAndSetupDomain (1573ms)
-		LoadAssemblies (1591ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (304ms)
-			TypeCache.Refresh (126ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (160ms)
-	FinalizeReload (26037ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (10561ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (179ms)
-			SetLoadedEditorAssemblies (124ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2098ms)
-			ProcessInitializeOnLoadAttributes (7305ms)
-			ProcessInitializeOnLoadMethodAttributes (535ms)
-			AfterProcessingInitializeOnLoad (320ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (201ms)
-Refreshing native plugins compatible for Editor in 117.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (30.5 KB). Loaded Objects now: 3622.
-Memory consumption went from 128.3 MB to 128.3 MB.
-Total: 66.501500 ms (FindLiveObjects: 9.286500 ms CreateObjectMapping: 1.110100 ms MarkObjects: 51.864300 ms  DeleteObjects: 4.231800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.219 seconds
-Refreshing native plugins compatible for Editor in 12.20 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  7.328 seconds
-Domain Reload Profiling: 8547ms
-	BeginReloadAssembly (396ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (66ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (622ms)
-		LoadAssemblies (823ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (7339ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3765ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (58ms)
-			SetLoadedEditorAssemblies (20ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (784ms)
-			ProcessInitializeOnLoadAttributes (2582ms)
-			ProcessInitializeOnLoadMethodAttributes (212ms)
-			AfterProcessingInitializeOnLoad (108ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (71ms)
-Refreshing native plugins compatible for Editor in 39.23 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3083 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (30.4 KB). Loaded Objects now: 3625.
-Memory consumption went from 128.6 MB to 128.6 MB.
-Total: 19.605200 ms (FindLiveObjects: 1.477300 ms CreateObjectMapping: 5.226200 ms MarkObjects: 12.668600 ms  DeleteObjects: 0.229500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 12348.680182 seconds.
-  path: Assets/Models/bg.fbx
-  artifactKey: Guid(221e4a2a5bec1b24aaae869f826aea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/bg.fbx using Guid(221e4a2a5bec1b24aaae869f826aea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8600f14dd9d18c965055fe52fae23e76') in 3.926234 seconds
+  Time since last request: 1.061340 seconds.
+  path: Assets/Materials/Flowers
+  artifactKey: Guid(135c5358b16e19543a38c6c8d83c8b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers using Guid(135c5358b16e19543a38c6c8d83c8b36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2067c4260d389d8509f98b6382ac22a') in 0.000932 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1.710528 seconds.
-  path: Assets/Models/bg.fbx
-  artifactKey: Guid(221e4a2a5bec1b24aaae869f826aea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/bg.fbx using Guid(221e4a2a5bec1b24aaae869f826aea5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8600f14dd9d18c965055fe52fae23e76') in 1.517249 seconds
+  Time since last request: 35.981776 seconds.
+  path: Assets/Materials/Flowers/crimson.mat
+  artifactKey: Guid(b3b0a4ea43ce4004a9c7089c3d619695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/crimson.mat using Guid(b3b0a4ea43ce4004a9c7089c3d619695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689d55db898d5f9d88272a3a890de2ba') in 0.040502 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Models/sunflower.fbx
-  artifactKey: Guid(a97d52872873cd84ab627236c39775cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/sunflower.fbx using Guid(a97d52872873cd84ab627236c39775cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a44a99068daa09f152fcfae5ab9cc7aa') in 3.633183 seconds
+  Time since last request: 6.804232 seconds.
+  path: Assets/Materials/Flowers/M_crimson.mat
+  artifactKey: Guid(b3b0a4ea43ce4004a9c7089c3d619695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_crimson.mat using Guid(b3b0a4ea43ce4004a9c7089c3d619695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cf6ff5fec2765420914344fc55b560a') in 0.041989 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002103 seconds.
-  path: Assets/Models/rocks.fbx
-  artifactKey: Guid(0c7d20105c6676548b09e4e9fc6e872f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/rocks.fbx using Guid(0c7d20105c6676548b09e4e9fc6e872f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9adac905176d9ac72eafca21766f6a4') in 0.342611 seconds
+  Time since last request: 3.774525 seconds.
+  path: Assets/Prefabs/3_Advanced +/Magenta Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Magenta Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf75deb3624452a3e3060bbeb7c2b62') in 0.063915 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
+Number of asset objects unloaded after import = 21
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Models/lavenderv1.fbx
-  artifactKey: Guid(d50889205bd8f604fa757cb29cb376e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/lavenderv1.fbx using Guid(d50889205bd8f604fa757cb29cb376e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098e6b10e212e00f7da22548c8500aaf') in 6.756628 seconds
+  Time since last request: 8.621383 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f069ef4239f2debf5b96a4c0d4319267') in 0.019750 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 10
+Number of asset objects unloaded after import = 21
 ========================================================================
 Received Import Request.
-  Time since last request: 6.223479 seconds.
-  path: Assets/Prefabs/2_Advanced/Yellow Flower.prefab
-  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/2_Advanced/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e1613e72afa92e9e0338f265006f0d') in 0.023800 seconds
+  Time since last request: 17.484587 seconds.
+  path: Assets/Prefabs/3_Advanced +/LightOrange Flower.prefab
+  artifactKey: Guid(c8922470ea0b62948a8b043135680035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/LightOrange Flower.prefab using Guid(c8922470ea0b62948a8b043135680035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1dcead0eb3a12cf7d73594368c3384') in 0.033952 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in 120.876 seconds
-Refreshing native plugins compatible for Editor in 7.56 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.919 seconds
-Domain Reload Profiling: 123692ms
-	BeginReloadAssembly (5851ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (465ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (37ms)
-		CreateAndSetChildDomain (1654ms)
-	RebuildCommonClasses (1285ms)
-	RebuildNativeTypeToScriptingClass (1170ms)
-	initialDomainReloadingComplete (1129ms)
-	LoadAllAssembliesAndSetupDomain (111321ms)
-		LoadAssemblies (114064ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (28ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (2936ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (926ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (17ms)
-			SetLoadedEditorAssemblies (58ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (624ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
-			AfterProcessingInitializeOnLoad (24ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 9.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.6 KB). Loaded Objects now: 3629.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 6.285400 ms (FindLiveObjects: 0.323800 ms CreateObjectMapping: 0.306200 ms MarkObjects: 5.576400 ms  DeleteObjects: 0.077500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  5.046 seconds
-Refreshing native plugins compatible for Editor in 16.00 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.349 seconds
-Domain Reload Profiling: 7375ms
-	BeginReloadAssembly (580ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (132ms)
-	RebuildCommonClasses (62ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (105ms)
-	LoadAllAssembliesAndSetupDomain (4255ms)
-		LoadAssemblies (4514ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (37ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (18ms)
-	FinalizeReload (2350ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (966ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (36ms)
-			SetLoadedEditorAssemblies (11ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (148ms)
-			ProcessInitializeOnLoadAttributes (709ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
-			AfterProcessingInitializeOnLoad (26ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 11.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.6 KB). Loaded Objects now: 3632.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 8.132700 ms (FindLiveObjects: 0.508000 ms CreateObjectMapping: 0.373200 ms MarkObjects: 7.163200 ms  DeleteObjects: 0.086700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.676 seconds
-Refreshing native plugins compatible for Editor in 11.64 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  9.063 seconds
-Domain Reload Profiling: 10720ms
-	BeginReloadAssembly (461ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (79ms)
-	RebuildCommonClasses (112ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (201ms)
-	LoadAllAssembliesAndSetupDomain (834ms)
-		LoadAssemblies (1069ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (31ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (9074ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (4696ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (110ms)
-			SetLoadedEditorAssemblies (48ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (635ms)
-			ProcessInitializeOnLoadAttributes (3447ms)
-			ProcessInitializeOnLoadMethodAttributes (281ms)
-			AfterProcessingInitializeOnLoad (174ms)
-			EditorAssembliesLoaded (2ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (84ms)
-Refreshing native plugins compatible for Editor in 22.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.6 KB). Loaded Objects now: 3635.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 37.118600 ms (FindLiveObjects: 0.727300 ms CreateObjectMapping: 0.726000 ms MarkObjects: 20.702700 ms  DeleteObjects: 14.960100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.189 seconds
-Refreshing native plugins compatible for Editor in 8.67 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.063 seconds
-Domain Reload Profiling: 6243ms
-	BeginReloadAssembly (367ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (630ms)
-		LoadAssemblies (805ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (5065ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3205ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (63ms)
-			SetLoadedEditorAssemblies (32ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (581ms)
-			ProcessInitializeOnLoadAttributes (2255ms)
-			ProcessInitializeOnLoadMethodAttributes (156ms)
-			AfterProcessingInitializeOnLoad (117ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (55ms)
-Refreshing native plugins compatible for Editor in 49.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.6 KB). Loaded Objects now: 3638.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 15.339200 ms (FindLiveObjects: 0.642100 ms CreateObjectMapping: 0.564900 ms MarkObjects: 13.998100 ms  DeleteObjects: 0.130300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.220 seconds
-Refreshing native plugins compatible for Editor in 11.86 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.933 seconds
-Domain Reload Profiling: 7146ms
-	BeginReloadAssembly (370ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (87ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (90ms)
-	LoadAllAssembliesAndSetupDomain (632ms)
-		LoadAssemblies (812ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (26ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (5937ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3525ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (83ms)
-			SetLoadedEditorAssemblies (46ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (605ms)
-			ProcessInitializeOnLoadAttributes (2540ms)
-			ProcessInitializeOnLoadMethodAttributes (142ms)
-			AfterProcessingInitializeOnLoad (109ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (55ms)
-Refreshing native plugins compatible for Editor in 45.60 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.6 KB). Loaded Objects now: 3641.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 31.272200 ms (FindLiveObjects: 1.236800 ms CreateObjectMapping: 1.157500 ms MarkObjects: 28.798800 ms  DeleteObjects: 0.076000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Number of asset objects unloaded after import = 21
 ========================================================================
 Received Import Request.
-  Time since last request: 546.629412 seconds.
-  path: Assets/Prefabs/4_Special/White Flower.prefab
-  artifactKey: Guid(3e811ff7a17945e46a10e5c27a784503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/4_Special/White Flower.prefab using Guid(3e811ff7a17945e46a10e5c27a784503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194149a0f4ef6d4dad70fd06d659dcb4') in 0.347150 seconds
+  Time since last request: 51.985799 seconds.
+  path: Assets/Prefabs/3_Advanced +/LightOrange Flower 1.prefab
+  artifactKey: Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/LightOrange Flower 1.prefab using Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa6fc20394f702bf24d5373b7a8b79ce') in 0.014584 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.084156 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkBlue Flower.prefab
+  artifactKey: Guid(6eff7b4c08b60c74dafddf39b735de53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkBlue Flower.prefab using Guid(6eff7b4c08b60c74dafddf39b735de53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7880e87bdb9395d48211eeaf5b688bc1') in 0.048005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 8.082106 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab
+  artifactKey: Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab using Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91634d4663b9b012f590eb62abff7c7c') in 0.034138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 5.991149 seconds.
+  path: Assets/Materials/Flowers/M_darkblue.mat
+  artifactKey: Guid(432db8f41bfed7e4a82d2e57cfd4c127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_darkblue.mat using Guid(432db8f41bfed7e4a82d2e57cfd4c127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e537d160950d48f59e40abd1a74ecbb3') in 0.051356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.067315 seconds.
+  path: Assets/Materials/Flowers/M_lightorange.mat
+  artifactKey: Guid(3e21735b3e130914eb080fe4910faa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_lightorange.mat using Guid(3e21735b3e130914eb080fe4910faa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3573afde88452733edd89a49e118f6e') in 0.044182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 10.296315 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab
+  artifactKey: Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab using Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec996fb4d8e88b8d031453352eb03752') in 0.043008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 11.154622 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab
+  artifactKey: Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab using Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa7c7a43a6405313fc2f5a0ff19eb8dd') in 0.050132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 2.202244 seconds.
+  path: Assets/Materials/Flowers/M_lightorange.mat
+  artifactKey: Guid(3e21735b3e130914eb080fe4910faa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_lightorange.mat using Guid(3e21735b3e130914eb080fe4910faa3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1ec714afac153d0a9cdd80c8745c67c') in 0.042579 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.621406 seconds.
+  path: Assets/Materials/Flowers/M_lightorange 1.mat
+  artifactKey: Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_lightorange 1.mat using Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6da97125ea40aa47a99462861ea2afb') in 0.032939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 13.158359 seconds.
+  path: Assets/Materials/Flowers/M_darkorange.mat
+  artifactKey: Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_darkorange.mat using Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a7db071a9c8e995d089a778fc0b28c') in 0.035762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 31.069301 seconds.
+  path: Assets/Materials/Flowers/M_darkorange.mat
+  artifactKey: Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Flowers/M_darkorange.mat using Guid(1a0f327e1adf5a04987a4e155272c036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6123a32df21843de645de07c5e2cc46a') in 0.047772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.674316 seconds.
+  path: Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab
+  artifactKey: Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/DarkOrange Flower.prefab using Guid(b319b3f595957ed41adfe83efc311bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e5b1f0d444846b6576d2dcc34b5ac2') in 0.046847 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 21
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.230 seconds
-Refreshing native plugins compatible for Editor in 12.17 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.274 seconds
+Refreshing native plugins compatible for Editor in 10.49 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.648 seconds
-Domain Reload Profiling: 7870ms
-	BeginReloadAssembly (350ms)
+- Finished resetting the current domain, in  5.735 seconds
+Domain Reload Profiling: 6999ms
+	BeginReloadAssembly (371ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (13ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (70ms)
-	RebuildCommonClasses (93ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (672ms)
-		LoadAssemblies (848ms)
+		CreateAndSetChildDomain (76ms)
+	RebuildCommonClasses (78ms)
+	RebuildNativeTypeToScriptingClass (29ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (677ms)
+		LoadAssemblies (867ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (12ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (11ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (6650ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (5738ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3603ms)
+		SetupLoadedEditorAssemblies (3068ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (56ms)
+			SetLoadedEditorAssemblies (33ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (453ms)
-			ProcessInitializeOnLoadAttributes (2809ms)
-			ProcessInitializeOnLoadMethodAttributes (176ms)
-			AfterProcessingInitializeOnLoad (133ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (498ms)
+			ProcessInitializeOnLoadAttributes (2197ms)
+			ProcessInitializeOnLoadMethodAttributes (160ms)
+			AfterProcessingInitializeOnLoad (124ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (44ms)
-Refreshing native plugins compatible for Editor in 41.97 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (132ms)
+Refreshing native plugins compatible for Editor in 32.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (29.7 KB). Loaded Objects now: 3644.
-Memory consumption went from 128.4 MB to 128.3 MB.
-Total: 13.499400 ms (FindLiveObjects: 0.969100 ms CreateObjectMapping: 1.001400 ms MarkObjects: 11.358000 ms  DeleteObjects: 0.167500 ms)
+Unloading 24 unused Assets / (30.5 KB). Loaded Objects now: 3616.
+Memory consumption went from 128.6 MB to 128.6 MB.
+Total: 19.142900 ms (FindLiveObjects: 1.106100 ms CreateObjectMapping: 1.011200 ms MarkObjects: 16.387000 ms  DeleteObjects: 0.635700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -837,9 +405,867 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 356.479507 seconds.
-  path: Assets/Materials/M_ground 1.mat
-  artifactKey: Guid(6c7bf2d129674c74f8596cfab76e76c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/M_ground 1.mat using Guid(6c7bf2d129674c74f8596cfab76e76c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80ad28123ce50d58faf1b6293c826712') in 0.715890 seconds
+  Time since last request: 82.549234 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c56a73b95fe3283d4859a31ca3a9d5') in 0.227619 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 6.649206 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ef925d75e984c93d128fe00b92517eb') in 0.032043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.198708 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86e47b1d1a673b8da9b8401afb90425') in 0.034302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.151693 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a0a52cc1ec92445e86086ba5aa739d') in 0.034986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 11.255903 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91e9377befefb30bb77f74a2832fe193') in 0.033957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.177030 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f842ec4f37133c2c90d21621708b1e') in 0.034435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.188248 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1c260576b031fb9cb8427b4bba840f') in 0.028545 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.143699 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb690b7ba77d55054a88083c597265b') in 0.032803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 5.408874 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e82f1726e84ba1e5f9348a3b3ae0e7d7') in 0.025666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.184036 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '096d352004753165aa0161b1da1675a7') in 0.032260 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.206811 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '412e7913f39ccce6f7f1e230b7f609f9') in 0.033113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.126595 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72abfe45fdd2d761d327ec68ad2505c4') in 0.032840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.196792 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab8b5b6ecaba2a1ca1a0a483818acc1') in 0.036279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.760489 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f584604d439fac09736be7d47f0a9cf') in 0.033396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 2.806949 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616f1693ec20d126377cd982cd60db97') in 0.027539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.193433 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbd9eec35969c5ccaa93e4a62d847ac') in 0.034279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.180527 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9ed69af0950679c5c9ad007a3e3a38') in 0.034105 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.156343 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb46157b29fb0859de061242b17b3b3e') in 0.035311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.173073 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b8ef8cfd5a8c22e8893c8a4fe52de4c') in 0.035275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.171027 seconds.
+  path: Assets/Prefabs/1_Basic/Blue Flower.prefab
+  artifactKey: Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Blue Flower.prefab using Guid(7320f88458e64e4489a7c9b65d6c68b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05150d4e1078180531cc13a35b9158ef') in 0.038071 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 8.717210 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44cc125f929aeeec1b007c738e2ecf5') in 0.053098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.154201 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5c6ac550f1cb38180d17026e0af6470') in 0.040174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.157310 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c67cd0bd0ff2cce9da495e48b05db80a') in 0.025270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.158184 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87436896ef7d8609c94cd3bb4d3668a2') in 0.024815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.202332 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36f64a0b505cfeafa34ba8f374d841cd') in 0.021494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 3.403571 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '779777355ae946ed81f038d3384341db') in 0.023390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.180052 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '113de599ac90d1219fb5280849e0e099') in 0.041651 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.168175 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7281eded1086548e308aac636bbda2b8') in 0.024200 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.568925 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0930f42a34c0dd2338fb765b7c103d') in 0.023613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.163845 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a454cb9d921b880fb53cd0aebb3bc2') in 0.024708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.400239 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982e8599e2fcde9f180eb8dce4637e9a') in 0.023436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.194302 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd607a7bb493e155a2a18a1705e98cf') in 0.022342 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.163101 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af137e1463b40092478814b744817564') in 0.024668 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.606794 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68be12e8d19128bc3b91b58187cca67b') in 0.024073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.355536 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdf7caddb5e5153cb1ec7f0249428f03') in 0.026934 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.776162 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d10e114749c47c626dd9fcf1e8433f6') in 0.023062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.190659 seconds.
+  path: Assets/Prefabs/1_Basic/Red Flower.prefab
+  artifactKey: Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Red Flower.prefab using Guid(cfe3e2f40db3ad644a252b92cc297c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2874db3afd7a597f79e98085addddb2e') in 0.023263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 14.166845 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '400f0fb9f9d9e04d887111ab158bed08') in 0.041215 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.141764 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e62631236e82146a858785b8c1ddfa') in 0.023518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.184704 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa45eee015f689b605c4acef652367a') in 0.025317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.169497 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5bca546a55331f8087842e8df0b6be') in 0.026803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.976181 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e07dc59c8a1721146a133c957cd0af8') in 0.036056 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.177544 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0448052db7e06e18200215290cc785e') in 0.028851 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.199425 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa3141a2a5fe64dbe2f469bd1dce3c36') in 0.021247 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.165820 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e5cd23af5aa6eb4721d2d46b699cec') in 0.027017 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 2.378511 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70399d866924675c25ae38b1a296b51f') in 0.023178 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.175672 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09328b2f913655a4d70def77cf6c476') in 0.023269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.165476 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '958afa82d07e02fb4c0c337789e91ac0') in 0.031749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.178503 seconds.
+  path: Assets/Prefabs/1_Basic/Yellow Flower.prefab
+  artifactKey: Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/1_Basic/Yellow Flower.prefab using Guid(94d861e28ef6aa04c92826bcf252d195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea3b55919abba02cb43df84e337ecd6') in 0.026117 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 30.690515 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f6cdc635b220a3b7bca845b2d61b0f') in 0.102610 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.301291 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87d93d8ac01405f7142d42e297bfc97a') in 0.054592 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.543619 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740a3c9b9dd42888cb176ee7df69dfca') in 0.041557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.149360 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bc86335eae2d1822cf9356bbbcab06c') in 0.040204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.356044 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '118ab0f36d9874ba36415895fb36e5ce') in 0.040742 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 27.004362 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deac061211bcc4fc0aa19649d6a337d9') in 0.021399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 1.336529 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f151d5f71c96b5fc268f832f74830e') in 0.030756 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 12.872561 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4da918b0dd45613a544210984bf367e') in 0.022710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 3.248513 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca27237fca9875d0b88eada0ce82b4b') in 0.025638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 0.541999 seconds.
+  path: Assets/Prefabs/3_Advanced +/Crimson Flower.prefab
+  artifactKey: Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/3_Advanced +/Crimson Flower.prefab using Guid(021557363d2dc584fa5b3bfb775d9945) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c39ba625d0a3ab5bf918c3b8879ec28') in 0.024759 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 16.205979 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3560463be4adabf5f00ddaaa2789b661') in 0.036089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 3.975287 seconds.
+  path: Assets/Prefabs/2_Advanced/Green Flower.prefab
+  artifactKey: Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Green Flower.prefab using Guid(6f326129ecca3ec47b060ee6baa7b4bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b726b97485891d5864a9131ce7a41c9d') in 0.051417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 11.260739 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8a2ca13ed04222110b98d34d202772') in 0.134421 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.670128 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f4c41d2bc2d7854078239ed5ec51b59') in 0.070841 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.134406 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2ed5de11fdc117040e52df2e60124c') in 0.066291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.014872 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9e94aa883332e6611407456e7afcb9b') in 0.049840 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.925466 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72bdb89839339cee1b1b7c38feffec7') in 0.069697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.144401 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88814bedc61f6686d6112995bfc788b') in 0.053008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.947429 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ab0540f978a57ba42fc66a0ba4d7ca') in 0.050714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.545245 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36d7fd5b3f401547543f6c927aea0da') in 0.071026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.155310 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00dee18b9650dfa46f7e33d853be0e70') in 0.048414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 1.555542 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd891be5cc2f63da0222dec2a117bf1') in 0.062944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.357522 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1441ba81b2aa482fe2d41c727a1f9286') in 0.066329 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.117609 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0463e4564538deae87a70765d62d916') in 0.085843 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.116139 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78004f6813defd4d7e9fbf9d6763b2d0') in 0.065718 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 0.149481 seconds.
+  path: Assets/Prefabs/2_Advanced/Purple Flower.prefab
+  artifactKey: Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Purple Flower.prefab using Guid(c026db8a34a14dd4989353b569b3fbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5e7febbbdbb552555e32125daec92d') in 0.071429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 23
+========================================================================
+Received Import Request.
+  Time since last request: 6.418906 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ec3ef3961eca3ebfa77fc042ed0c11') in 0.038781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.567260 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e29def510e0012c41485c75bea3aec') in 0.026557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.199694 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff6671480ffffb016e6c93a871bbb19') in 0.027384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.146627 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e45761aee0f823440c06c27aed29a3d') in 0.023233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.595292 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458a06a213b81b1c77287f70aa4fd3da') in 0.034245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.375608 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd138aa86810c131e4b7e2b27ab9e6ccf') in 0.024662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.391289 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a91e0a0bc1f2f9253e803d30134ed4') in 0.037009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.146831 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb46b26e22aaa494bf03b6aa5a73aae') in 0.022009 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.403053 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a90737163022927e3532adffd8e646') in 0.024715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.810184 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f5b941cf37e19ae54defa875cd09ce') in 0.023301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1.575797 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd5a8b536da9c8785e0c248884deed4') in 0.025571 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.212163 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab04956228f1dc59ad975db5f6b29e93') in 0.023228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.175572 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332d42439c2840dafa04c68204fa3a1e') in 0.036811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.143745 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601ed91027fedc39afc8246c9f48fbd6') in 0.022825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.200178 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f998c5a457db93740979b058b72bbf3') in 0.024350 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.149408 seconds.
+  path: Assets/Prefabs/2_Advanced/Orange Flower.prefab
+  artifactKey: Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/2_Advanced/Orange Flower.prefab using Guid(2b09dfc31f350b1438ddcd701ecc07d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd45b0885e9079b2817703aed61b1a6e') in 0.025351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.131 seconds
+Refreshing native plugins compatible for Editor in 10.36 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.446 seconds
+Domain Reload Profiling: 5571ms
+	BeginReloadAssembly (354ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (16ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (65ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (74ms)
+	LoadAllAssembliesAndSetupDomain (588ms)
+		LoadAssemblies (759ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (11ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (4452ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2809ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (55ms)
+			SetLoadedEditorAssemblies (33ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (506ms)
+			ProcessInitializeOnLoadAttributes (1987ms)
+			ProcessInitializeOnLoadMethodAttributes (151ms)
+			AfterProcessingInitializeOnLoad (75ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (45ms)
+Refreshing native plugins compatible for Editor in 53.60 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (30.5 KB). Loaded Objects now: 3619.
+Memory consumption went from 128.7 MB to 128.6 MB.
+Total: 19.863100 ms (FindLiveObjects: 1.064700 ms CreateObjectMapping: 0.882200 ms MarkObjects: 17.666200 ms  DeleteObjects: 0.247100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 397.855764 seconds.
+  path: Assets/Models/hydrangeav3.fbx
+  artifactKey: Guid(b589bcfd69e4d1e47b3cf4b70fdc2b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/hydrangeav3.fbx using Guid(b589bcfd69e4d1e47b3cf4b70fdc2b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d246f47ac0b74f63e2b766d075c7b01') in 0.676188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.983 seconds
+Refreshing native plugins compatible for Editor in 13.38 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  7.664 seconds
+Domain Reload Profiling: 9636ms
+	BeginReloadAssembly (670ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (34ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (129ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (156ms)
+	LoadAllAssembliesAndSetupDomain (1033ms)
+		LoadAssemblies (1267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (14ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (7665ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1254ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (76ms)
+			SetLoadedEditorAssemblies (31ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (428ms)
+			ProcessInitializeOnLoadAttributes (644ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (30ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (31ms)
+Refreshing native plugins compatible for Editor in 11.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3082 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (30.5 KB). Loaded Objects now: 3625.
+Memory consumption went from 128.8 MB to 128.8 MB.
+Total: 9.230400 ms (FindLiveObjects: 0.481100 ms CreateObjectMapping: 0.380300 ms MarkObjects: 8.288900 ms  DeleteObjects: 0.078600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
