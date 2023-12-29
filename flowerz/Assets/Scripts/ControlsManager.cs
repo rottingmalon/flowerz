@@ -1,19 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlsManager : MonoBehaviour
 {
     [SerializeField] private GameObject redFlower;
     [SerializeField] private GameObject blueFlower;
     [SerializeField] private GameObject yellowFlower;
+    [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private float scrollSpeed = 10;
+
+    public static bool IsGamePaused;
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
 
     private void Start()
     {
+        IsGamePaused = false;
         _selectedFlower = redFlower;
         _cam = Camera.main;
     }
@@ -49,12 +54,58 @@ public class ControlsManager : MonoBehaviour
         }
         #endregion
 
+        #region PAUSE
+        if (Input.GetKeyUp("escape"))
+        {
+            if (IsGamePaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+        #endregion
+
         if (!Input.GetMouseButtonDown(0)) return;
         var r = _cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (!Physics.Raycast(r, out hit)) return;
         if (!hit.collider.CompareTag("Ground")) return;
+        if (IsGamePaused) return;
         Instantiate(_selectedFlower, hit.point, Quaternion.identity);
     }
+
+    #region MENUBUTTONS
+
+    public void Resume()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        IsGamePaused = false;
+    }
+
+    private void Pause()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        IsGamePaused = true;
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1f;
+        //SceneManager.LoadScene(menu)
+        Debug.Log("menu");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+        Debug.Log("quit");
+    }
+
+    #endregion
 }

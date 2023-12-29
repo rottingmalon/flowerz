@@ -9,6 +9,7 @@ using Unity.VisualScripting;
 public class Flower : MonoBehaviour
 {
     #region VAR
+    [SerializeField] private GameObject pollen;
     [SerializeField] private float fuseRadius;
     [SerializeField] private List<string> fusions;
     [SerializeField] private Ease easeMode;
@@ -26,17 +27,22 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
+        _growAmount = 0f;
         DOTween.Init();
         transform.DOScaleY(0, 0f);
         _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
         _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
         Grow();
-        Invoke(nameof(CheckFusions), growDuration);
+        Invoke(nameof(CheckFusions), growDuration + 1f);
     }
 
     private void Update()
     {
             transform.DOScaleY(_growAmount, 0f);
+            if (_growAmount >= 1f)
+            {
+                pollen.SetActive(true);
+            }
     }
 
     private void Grow()

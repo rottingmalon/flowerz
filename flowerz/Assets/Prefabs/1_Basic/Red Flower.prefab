@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360a65d288fc2a547bdbd7e80c0aeb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pollen: {fileID: 1018240486383912803}
   fuseRadius: 2
   fusions:
   - blue
@@ -162,6 +163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pollen
       objectReference: {fileID: 0}
+    - target: {fileID: 3798974793423160289, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: ShapeModule.radius.value
       value: 2.02
@@ -191,6 +196,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+--- !u!1 &1018240486383912803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3798974793423160289, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+  m_PrefabInstance: {fileID: 4222457947477968002}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1991897512864082489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395223536542969531, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}

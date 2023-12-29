@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360a65d288fc2a547bdbd7e80c0aeb1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pollen: {fileID: 6072157293589263328}
   fuseRadius: 1
   fusions:
   - red
@@ -251,6 +252,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pollen
       objectReference: {fileID: 0}
+    - target: {fileID: 3798974793423160289, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
       value: 0.3019608
@@ -271,5 +280,10 @@ PrefabInstance:
 --- !u!4 &4738211824489832122 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395223536542969531, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+  m_PrefabInstance: {fileID: 6988471241892556801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6072157293589263328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3798974793423160289, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
   m_PrefabInstance: {fileID: 6988471241892556801}
   m_PrefabAsset: {fileID: 0}
