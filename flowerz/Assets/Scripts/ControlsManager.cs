@@ -9,6 +9,9 @@ public class ControlsManager : MonoBehaviour
     [SerializeField] private GameObject blueFlower;
     [SerializeField] private GameObject yellowFlower;
     [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject redUI;
+    [SerializeField] private GameObject blueUI;
+    [SerializeField] private GameObject yellowUI;
     [SerializeField] private float scrollSpeed = 10;
 
     public static bool IsGamePaused;
@@ -37,14 +40,23 @@ public class ControlsManager : MonoBehaviour
         if (Input.GetKeyUp("1"))
         {
             _selectedFlower = redFlower;
+            redUI.SetActive(true);
+            blueUI.SetActive(false);
+            yellowUI.SetActive(false);
         }
         else if (Input.GetKeyUp("2"))
         {
             _selectedFlower = blueFlower;
+            redUI.SetActive(false);
+            blueUI.SetActive(true);
+            yellowUI.SetActive(false);
         }
         else if (Input.GetKeyUp("3"))
         {
             _selectedFlower = yellowFlower;
+            redUI.SetActive(false);
+            blueUI.SetActive(false);
+            yellowUI.SetActive(true);
         }
         #endregion
     
