@@ -18,7 +18,16 @@ public class ControlsManager : MonoBehaviour
 
     private void Start()
     {
-        IsGamePaused = false;
+        var currentScene = SceneManager.GetActiveScene();
+        if(currentScene.name == "Game")
+        {
+            IsGamePaused = false;
+        }
+        else
+        {
+            IsGamePaused = true;
+        }
+
         _selectedFlower = redFlower;
         _cam = Camera.main;
     }
@@ -97,14 +106,18 @@ public class ControlsManager : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1f;
-        //SceneManager.LoadScene(menu)
-        Debug.Log("menu");
+        SceneManager.LoadScene(0);
+    }
+
+    public void PlayGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
     }
 
     public void Quit()
     {
         Application.Quit();
-        Debug.Log("quit");
     }
 
     #endregion
