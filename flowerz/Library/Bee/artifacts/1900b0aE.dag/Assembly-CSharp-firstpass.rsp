@@ -361,6 +361,13 @@
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs"
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs"
 "Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs"
+"Assets/Plugins/DiscordGameSDK/ActivityManager.cs"
+"Assets/Plugins/DiscordGameSDK/Constants.cs"
+"Assets/Plugins/DiscordGameSDK/Core.cs"
+"Assets/Plugins/DiscordGameSDK/ImageManager.cs"
+"Assets/Plugins/DiscordGameSDK/LobbyManager.cs"
+"Assets/Plugins/DiscordGameSDK/StorageManager.cs"
+"Assets/Plugins/DiscordGameSDK/StoreManager.cs"
 -langversion:9.0
 
 /deterministic
