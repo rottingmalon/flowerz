@@ -14,7 +14,7 @@ public class ControlsManager : MonoBehaviour
     [SerializeField] private GameObject yellowUI;
     [SerializeField] private float scrollSpeed = 10;
 
-    public static bool IsGamePaused;
+    private static bool _isGamePaused;
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
@@ -24,11 +24,11 @@ public class ControlsManager : MonoBehaviour
         var currentScene = SceneManager.GetActiveScene();
         if(currentScene.name == "Game")
         {
-            IsGamePaused = false;
+            _isGamePaused = false;
         }
         else
         {
-            IsGamePaused = true;
+            _isGamePaused = true;
         }
 
         _selectedFlower = redFlower;
@@ -78,7 +78,7 @@ public class ControlsManager : MonoBehaviour
         #region PAUSE
         if (Input.GetKeyUp("escape"))
         {
-            if (IsGamePaused)
+            if (_isGamePaused)
             {
                 Resume();
             }
@@ -89,13 +89,18 @@ public class ControlsManager : MonoBehaviour
         }
         #endregion
 
+        if (Input.GetKeyUp("f"))
+        {
+            ScreenCapture.CaptureScreenshot("screenshot.png");
+        }
+
         if (!Input.GetMouseButtonDown(0)) return;
         var r = _cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (!Physics.Raycast(r, out hit)) return;
         if (!hit.collider.CompareTag("Ground")) return;
-        if (IsGamePaused) return;
+        if (_isGamePaused) return;
         Instantiate(_selectedFlower, hit.point, Quaternion.identity);
     }
 
@@ -105,14 +110,14 @@ public class ControlsManager : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        IsGamePaused = false;
+        _isGamePaused = false;
     }
 
     private void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        IsGamePaused = true;
+        _isGamePaused = true;
     }
 
     public void MainMenu()
