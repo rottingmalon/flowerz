@@ -22,7 +22,7 @@ public class ControlsManager : MonoBehaviour
     private void Start()
     {
         var currentScene = SceneManager.GetActiveScene();
-        if(currentScene.name == "Game")
+        if (currentScene.name == "Game")
         {
             _isGamePaused = false;
         }

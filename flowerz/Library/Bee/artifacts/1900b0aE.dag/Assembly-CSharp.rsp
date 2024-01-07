@@ -361,6 +361,7 @@
 "Assets/Scripts/Discord_Controller.cs"
 "Assets/Scripts/flower.cs"
 "Assets/Scripts/FlowerManager.cs"
+"Assets/Scripts/MainMenuManager.cs"
 "Assets/Scripts/ShaderHandler.cs"
 -langversion:9.0
 
