@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    private void Update()
+    {
+        if (Input.GetKeyUp("f"))
+        {
+            ScreenCapture.CaptureScreenshot("screenshot.png");
+        }
+    }
+
     public void PlayGame()
      {
          Time.timeScale = 1f;
