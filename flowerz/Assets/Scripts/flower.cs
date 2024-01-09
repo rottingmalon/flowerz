@@ -10,6 +10,7 @@ public class Flower : MonoBehaviour
 {
     #region VAR
     [SerializeField] private GameObject pollen;
+    [SerializeField] private GameObject burstPS;
     [SerializeField] private float fuseRadius;
     [SerializeField] private List<string> fusions;
     [SerializeField] private Ease easeMode;
@@ -42,6 +43,7 @@ public class Flower : MonoBehaviour
             if (_growAmount >= 1f)
             {
                 pollen.SetActive(true);
+                burstPS.SetActive(true);
             }
     }
 

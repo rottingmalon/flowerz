@@ -33,6 +33,7 @@ Transform:
   - {fileID: 8448470201753773480}
   - {fileID: 677480309492980208}
   - {fileID: 8109733749226873954}
+  - {fileID: 9137945916050231754}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3553741330779586565
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pollen: {fileID: 7281950677901822264}
+  burstPS: {fileID: 7734265002001775760}
   fuseRadius: 0.4
   fusions:
   - white
@@ -276,4 +278,79 @@ GameObject:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2395223536542969531, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
   m_PrefabInstance: {fileID: 5887899047588940505}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6912192517818269553
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7361869030652572668}
+    m_Modifications:
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.676
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798974793423160289, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_Name
+      value: Pollen Burst
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798974793423160289, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926551355372575418, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
+      value: 60
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+--- !u!1 &7734265002001775760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3798974793423160289, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+  m_PrefabInstance: {fileID: 6912192517818269553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9137945916050231754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
+  m_PrefabInstance: {fileID: 6912192517818269553}
   m_PrefabAsset: {fileID: 0}
