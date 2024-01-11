@@ -18,6 +18,9 @@ public class ControlsManager : MonoBehaviour
 
     private GameObject _selectedFlower = null;
     private Camera _cam;
+    
+    private GameObject _audioManagerObject;
+    private AudioManager _audioManager;
 
     private void Start()
     {
@@ -33,6 +36,9 @@ public class ControlsManager : MonoBehaviour
 
         _selectedFlower = redFlower;
         _cam = Camera.main;
+        
+        _audioManagerObject = GameObject.FindGameObjectWithTag("AudioManager");
+        _audioManager = _audioManagerObject.GetComponent<AudioManager>();
     }
     private void Update()
     {
@@ -101,6 +107,7 @@ public class ControlsManager : MonoBehaviour
         if (!Physics.Raycast(r, out hit)) return;
         if (!hit.collider.CompareTag("Ground")) return;
         if (_isGamePaused) return;
+        _audioManager.PlayDirtSfx();
         Instantiate(_selectedFlower, hit.point, Quaternion.identity);
     }
 
