@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollen: {fileID: 7281950677901822264}
   burstPS: {fileID: 7734265002001775760}
+  fusionPS: {fileID: 0}
   fuseRadius: 0.4
   fusions:
   - white

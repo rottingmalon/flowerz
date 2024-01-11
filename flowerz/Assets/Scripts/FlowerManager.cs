@@ -1,7 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Quaternion = UnityEngine.Quaternion;
+using Vector3 = UnityEngine.Vector3;
 
 public class FlowerManager : MonoBehaviour
 {
@@ -30,13 +34,23 @@ public class FlowerManager : MonoBehaviour
     [SerializeField] private GameObject blackFlower;
 
     #endregion
-
-    [Space] 
-    [SerializeField] private GameObject fusionPS;
-    [SerializeField] private GameObject fusionPS1;
-    private ParticleSystem.MainModule _psColor;
-    private ParticleSystem.MainModule _psColor1;
-
+    
+    
+    [FormerlySerializedAs("fusionPSR")]
+    [Header("PS")]
+    #region PS
+    [SerializeField] private GameObject fusionPsr;
+    [SerializeField] private GameObject fusionPsb;
+    [SerializeField] private GameObject fusionPsy;
+    [SerializeField] private GameObject fusionPsg;
+    [SerializeField] private GameObject fusionPsp;
+    [SerializeField] private GameObject fusionPso;
+    [SerializeField] private GameObject fusionPsw;
+    #endregion
+    
+    [Space]
+    private GameObject _fusionPS;
+    private GameObject _fusionPS1;
 
     private string[,] _attributesArray;
 
@@ -59,9 +73,6 @@ public class FlowerManager : MonoBehaviour
         };
 
         #endregion
-
-        _psColor = fusionPS.GetComponent<ParticleSystem>().main;
-        _psColor1 = fusionPS1.GetComponent<ParticleSystem>().main;
     }
 
     public void Fuse(GameObject flower1, GameObject flower2)
@@ -80,26 +91,16 @@ public class FlowerManager : MonoBehaviour
 
         if (tempFlower == null) return;
 
-        CreateFusionPS(flower1, flower2, tempPos);
+        //CreateFusionPS(flower1, flower2, tempPos);
+        _fusionPS = SelectFusionPS(flower1.GetComponent<Flower>().attribute);
+        _fusionPS1 = SelectFusionPS(flower2.GetComponent<Flower>().attribute);
+        Instantiate(_fusionPS, tempPos, Quaternion.Euler(-90, 0, 0));
+        Instantiate(_fusionPS1, tempPos, Quaternion.Euler(-90, 0, 0));
 
         //make an instantiate coroutine
-        Destroy(flower1);
-        Destroy(flower2);
-        Instantiate(tempFlower, tempPos, Quaternion.identity);
+        StartCoroutine(Fusion(flower1, flower2, tempFlower, tempPos));
     }
-
-    private void CreateFusionPS(GameObject flower1, GameObject flower2, Vector3 position)
-    {
-        var attribute1 = flower1.GetComponent<Flower>().attribute;
-        var attribute2 = flower2.GetComponent<Flower>().attribute;
-
-        _psColor.startColor = PickPSColor(attribute1);
-        _psColor1.startColor = PickPSColor(attribute2);
-
-        Instantiate(fusionPS, position, Quaternion.Euler(-90, 0, 0));
-        Instantiate(fusionPS1, position, Quaternion.Euler(-90, 0, 0));
-    }
-
+    
     private string SelectAttribute(GameObject flower1, GameObject flower2)
     {
         var x = 0;
@@ -167,6 +168,33 @@ public class FlowerManager : MonoBehaviour
         return (fusion);
     }
 
+    private GameObject SelectFusionPS(string attribute)
+    {
+        return attribute switch
+        {
+            ("red") => (fusionPsr),
+            ("blue") => (fusionPsb),
+            ("yellow") => (fusionPsy),
+            ("purple") => (fusionPsp),
+            ("green") => (fusionPsg),
+            ("orange") => (fusionPso),
+            ("white") => (fusionPsw),
+            _ => (null)
+        };
+    }
+
+    private IEnumerator Fusion(GameObject flower1, GameObject flower2, GameObject tempFlower, Vector3 tempPos)
+    {
+        flower1.GetComponent<Flower>().isDead = true;
+        flower2.GetComponent<Flower>().isDead = true;
+        
+        yield return new WaitForSeconds(4f);
+        Destroy(flower1);
+        Destroy(flower2);
+        Instantiate(tempFlower, tempPos, Quaternion.identity);
+    }
+
+    /*
     private Color PickPSColor(string attribute)
     {
         switch (attribute)
@@ -196,4 +224,17 @@ public class FlowerManager : MonoBehaviour
                 return (new Color(0, 0, 0, 255));
         }
     }
+
+    private void CreateFusionPS(GameObject flower1, GameObject flower2, Vector3 position)
+    {
+        var attribute1 = flower1.GetComponent<Flower>().attribute;
+        var attribute2 = flower2.GetComponent<Flower>().attribute;
+
+        _psColor.startColor = PickPSColor(attribute1);
+        _psColor1.startColor = PickPSColor(attribute2);
+
+        Instantiate(fusionPS, position, Quaternion.Euler(-90, 0, 0));
+        Instantiate(fusionPS1, position, Quaternion.Euler(-90, 0, 0));
+    }
+    */
 }

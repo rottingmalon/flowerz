@@ -20,6 +20,8 @@ public class Flower : MonoBehaviour
     public string attribute;
     private GameObject _flowerManagerObject;
     private FlowerManager _flowerManager;
+
+    [HideInInspector] public bool isDead;
     
     //private float produceAmount;
     //private float produceTime;
@@ -28,6 +30,7 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
+        isDead = false;
         _growAmount = 0f;
         DOTween.Init();
         transform.DOScaleY(0, 0f);
@@ -44,6 +47,11 @@ public class Flower : MonoBehaviour
             {
                 pollen.SetActive(true);
                 burstPS.SetActive(true);
+            }
+
+            if (isDead)
+            {
+                DOTween.To(() => _growAmount, x => _growAmount = x, 0f, 4f);
             }
     }
 

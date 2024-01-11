@@ -261,15 +261,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.5943396
+      value: 0.59607846
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.06448025
+      value: 0.06274511
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.1674641
+      value: 0.098300636
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -352,7 +352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.16862746
+      value: 0.098300636
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
