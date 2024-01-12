@@ -22,6 +22,7 @@ public class Flower : MonoBehaviour
     private FlowerManager _flowerManager;
 
     [HideInInspector] public bool isDead;
+    [HideInInspector] public bool isFusing;
     
     //private float produceAmount;
     //private float produceTime;
@@ -30,6 +31,7 @@ public class Flower : MonoBehaviour
     #region FUN
     private void Start()
     {
+        isFusing = false;
         isDead = false;
         _growAmount = 0f;
         DOTween.Init();
@@ -87,10 +89,14 @@ public class Flower : MonoBehaviour
             {
                 foreach (var fusionAttribute in fusions)
                 {
-                    if (flower.GetComponent<Flower>().attribute == fusionAttribute)
+                    if (!this.isFusing)
                     {
-                        _flowerManager.Fuse(gameObject, flower);
-                        return;
+                        if (flower.GetComponent<Flower>().attribute == fusionAttribute && !isFusing)
+                        {
+                            _flowerManager.Fuse(gameObject, flower);
+                            isFusing = true;
+                            return;
+                        } 
                     }
                 }
             }
