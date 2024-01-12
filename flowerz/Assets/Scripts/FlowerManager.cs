@@ -35,7 +35,6 @@ public class FlowerManager : MonoBehaviour
 
     #endregion
     
-    
     [FormerlySerializedAs("fusionPSR")]
     [Header("PS")]
     #region PS
@@ -53,6 +52,9 @@ public class FlowerManager : MonoBehaviour
     private GameObject _fusionPS1;
 
     private string[,] _attributesArray;
+    
+    private GameObject _audioManagerObject;
+    private AudioManager _audioManager;
 
     #endregion
 
@@ -73,6 +75,9 @@ public class FlowerManager : MonoBehaviour
         };
 
         #endregion
+        
+        _audioManagerObject = GameObject.FindGameObjectWithTag("AudioManager");
+        _audioManager = _audioManagerObject.GetComponent<AudioManager>();
     }
 
     public void Fuse(GameObject flower1, GameObject flower2)
@@ -96,8 +101,9 @@ public class FlowerManager : MonoBehaviour
         _fusionPS1 = SelectFusionPS(flower2.GetComponent<Flower>().attribute);
         Instantiate(_fusionPS, tempPos, Quaternion.Euler(-90, 0, 0));
         Instantiate(_fusionPS1, tempPos, Quaternion.Euler(-90, 0, 0));
-
-        //make an instantiate coroutine
+        
+        _audioManager.PlayFusionSfx(tempPos);
+        
         StartCoroutine(Fusion(flower1, flower2, tempFlower, tempPos));
     }
     
@@ -189,8 +195,10 @@ public class FlowerManager : MonoBehaviour
         flower2.GetComponent<Flower>().isDead = true;
         
         yield return new WaitForSeconds(4f);
-        Destroy(flower1);
-        Destroy(flower2);
+        //Destroy(flower1);
+        flower1.transform.position = new Vector3(1000, 1000, 1000);
+        //Destroy(flower2);
+        flower2.transform.position = new Vector3(1000, 1000, 1000);
         Instantiate(tempFlower, tempPos, Quaternion.identity);
     }
 

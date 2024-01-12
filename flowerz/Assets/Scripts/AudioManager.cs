@@ -7,8 +7,10 @@ using Random = UnityEngine.Random;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] private GameObject dirtSfx;
+    [SerializeField] private GameObject fusionObject;
 
     private AudioSource _dirtSource;
+    private AudioSource _fusionSource;
 
     private void Start()
     {
@@ -19,7 +21,13 @@ public class AudioManager : MonoBehaviour
     {
         _dirtSource.pitch = Random.Range(1f, 1.5f);
         _dirtSource.Play();
+    }
 
-        //_dirtSource.pitch = 1f;
+    public void PlayFusionSfx(Vector3 pos)
+    {
+        Instantiate(fusionObject, pos, Quaternion.identity);
+        _fusionSource = fusionObject.GetComponent<AudioSource>();
+        _fusionSource.pitch = Random.Range(1f, 1.5f);
+        _fusionSource.Play();
     }
 }

@@ -50,13 +50,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollen: {fileID: 7281950677901822264}
   burstPS: {fileID: 7734265002001775760}
-  fusionPS: {fileID: 0}
   fuseRadius: 0.4
   fusions:
   - white
   easeMode: 10
   growDuration: 1
   attribute: white
+  isDead: 0
+  isFusing: 0
+  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
 --- !u!1 &6828192534547854809
 GameObject:
   m_ObjectHideFlags: 0

@@ -55,6 +55,9 @@ MonoBehaviour:
   easeMode: 27
   growDuration: 2
   attribute: magenta
+  isDead: 0
+  isFusing: 0
+  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
 --- !u!1 &6828192534547854809
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Linq;
 using DG.Tweening;
 using Unity.VisualScripting;
+using Random = UnityEngine.Random;
 
 public class Flower : MonoBehaviour
 {
@@ -23,33 +24,37 @@ public class Flower : MonoBehaviour
 
     [HideInInspector] public bool isDead;
     [HideInInspector] public bool isFusing;
+    private bool _canFuse;
+
+    [SerializeField] private GameObject burstSfxObject;
+    private AudioSource _burstSfxSource;
     
     //private float produceAmount;
     //private float produceTime;
     #endregion
 
-    #region FUN
     private void Start()
     {
+        _canFuse = false;
         isFusing = false;
         isDead = false;
         _growAmount = 0f;
+        
         DOTween.Init();
         transform.DOScaleY(0, 0f);
+        
         _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
         _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
+        
         Grow();
+        Invoke(nameof(PlayBurstSfx), growDuration);
+        Invoke(nameof(ActivatePS), growDuration);
         Invoke(nameof(CheckFusions), growDuration + 1f);
     }
 
     private void Update()
     {
             transform.DOScaleY(_growAmount, 0f);
-            if (_growAmount >= 1f)
-            {
-                pollen.SetActive(true);
-                burstPS.SetActive(true);
-            }
 
             if (isDead)
             {
@@ -85,13 +90,13 @@ public class Flower : MonoBehaviour
         //fuse with nearest possible & fully grown
         foreach (var flower in overlappedFlowers)
         {
-            if (flower.GetComponent<Flower>()._growAmount >= 1)
+            if (flower.GetComponent<Flower>()._canFuse)
             {
                 foreach (var fusionAttribute in fusions)
                 {
                     if (!this.isFusing)
                     {
-                        if (flower.GetComponent<Flower>().attribute == fusionAttribute && !isFusing)
+                        if (flower.GetComponent<Flower>().attribute == fusionAttribute && !flower.GetComponent<Flower>().isFusing)
                         {
                             _flowerManager.Fuse(gameObject, flower);
                             isFusing = true;
@@ -102,7 +107,21 @@ public class Flower : MonoBehaviour
             }
         }
     }
-    #endregion
+
+    private void PlayBurstSfx()
+    {
+        Instantiate(burstSfxObject, this.transform.position, Quaternion.identity);
+        _burstSfxSource = burstSfxObject.GetComponent<AudioSource>();
+        _burstSfxSource.pitch = Random.Range(1f, 1.5f);
+        _burstSfxSource.Play();
+    }
+    
+    private void ActivatePS()
+    {
+        pollen.SetActive(true);
+        burstPS.SetActive(true);
+        _canFuse = true;
+    }
 
     private void OnDrawGizmos()
     {
