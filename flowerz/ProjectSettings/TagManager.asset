@@ -8,6 +8,7 @@ TagManager:
   - FlowerRadius
   - FlowerManager
   - AudioManager
+  - BurstSFX
   layers:
   - Default
   - TransparentFX

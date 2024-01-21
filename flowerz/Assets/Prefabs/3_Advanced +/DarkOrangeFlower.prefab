@@ -57,7 +57,6 @@ MonoBehaviour:
   attribute: darkorange
   isDead: 0
   isFusing: 0
-  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
 --- !u!1 &6828192534547854809
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,15 +172,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.078431375
+      value: 0.05918475
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5294118
+      value: 0.40172547
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.78431374
+      value: 0.6603774
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -303,7 +302,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.699
+      value: 1.424
       objectReference: {fileID: 0}
     - target: {fileID: 2395223536542969531, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: m_LocalPosition.z
@@ -347,15 +346,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.078431375
+      value: 0.0627451
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5294118
+      value: 0.40392157
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: e14057f82a62f174e9d28a3ea7ca1572, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.78431374
+      value: 0.6627451
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

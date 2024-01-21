@@ -26,7 +26,7 @@ public class Flower : MonoBehaviour
     [HideInInspector] public bool isFusing;
     private bool _canFuse;
 
-    [SerializeField] private GameObject burstSfxObject;
+    private GameObject _burstSfxObject;
     private AudioSource _burstSfxSource;
     
     //private float produceAmount;
@@ -45,6 +45,9 @@ public class Flower : MonoBehaviour
         
         _flowerManagerObject = GameObject.FindGameObjectWithTag("FlowerManager");
         _flowerManager = _flowerManagerObject.GetComponent<FlowerManager>();
+
+        _burstSfxObject = GameObject.FindGameObjectWithTag("BurstSFX");
+        _burstSfxSource = _burstSfxObject.GetComponent<AudioSource>();
         
         Grow();
         Invoke(nameof(PlayBurstSfx), growDuration);
@@ -110,8 +113,8 @@ public class Flower : MonoBehaviour
 
     private void PlayBurstSfx()
     {
-        Instantiate(burstSfxObject, this.transform.position, Quaternion.identity);
-        _burstSfxSource = burstSfxObject.GetComponent<AudioSource>();
+        //Instantiate(burstSfxObject, this.transform.position, Quaternion.identity);
+        _burstSfxObject.transform.position = this.transform.position;
         _burstSfxSource.pitch = Random.Range(1f, 1.5f);
         _burstSfxSource.Play();
     }

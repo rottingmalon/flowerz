@@ -62,7 +62,7 @@ MonoBehaviour:
   attribute: blue
   isDead: 0
   isFusing: 0
-  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
+  burstSfxObject: {fileID: 0}
 --- !u!1 &4505920556220531818
 GameObject:
   m_ObjectHideFlags: 0
