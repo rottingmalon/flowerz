@@ -49,14 +49,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollen: {fileID: 3245081708752565262}
   burstPS: {fileID: 7523086766510730140}
-  fuseRadius: 0
+  fuseRadius: 1.5
   fusions: []
   easeMode: 19
   growDuration: 2
   attribute: black
   isDead: 0
   isFusing: 0
-  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
 --- !u!1001 &1851106906814740463
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,7 +114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 0.4
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: InitialModule.startSize.scalar

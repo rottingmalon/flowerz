@@ -50,14 +50,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pollen: {fileID: 1229131971582800857}
   burstPS: {fileID: 9113579502409072101}
-  fuseRadius: 1
+  fuseRadius: 1.4
   fusions: []
   easeMode: 30
   growDuration: 2
   attribute: skyblue
   isDead: 0
   isFusing: 0
-  burstSfxObject: {fileID: 7631340447378660522, guid: 3daac26ad74821840afac69f7bf62753, type: 3}
 --- !u!1 &6828192534547854809
 GameObject:
   m_ObjectHideFlags: 0
@@ -109,7 +108,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 1
+  m_Radius: 1.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1090488154649568674
 PrefabInstance:
@@ -257,6 +256,10 @@ PrefabInstance:
     - target: {fileID: 3798974793423160289, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4926551355372575418, guid: fe16acb615d00d849b8ddda90e5900a5, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
