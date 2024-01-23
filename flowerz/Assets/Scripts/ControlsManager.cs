@@ -45,41 +45,20 @@ public class ControlsManager : MonoBehaviour
         #region SWITCH FLOWER
         if (Input.GetKeyUp("1"))
         {
-            _selectedFlower = redFlower;
-            redUI.SetActive(true);
-            blueUI.SetActive(false);
-            yellowUI.SetActive(false);
+            SelectRedFlower();
         }
         else if (Input.GetKeyUp("2"))
         {
-            _selectedFlower = blueFlower;
-            redUI.SetActive(false);
-            blueUI.SetActive(true);
-            yellowUI.SetActive(false);
+            SelectBlueFlower();
         }
         else if (Input.GetKeyUp("3"))
         {
-            _selectedFlower = yellowFlower;
-            redUI.SetActive(false);
-            blueUI.SetActive(false);
-            yellowUI.SetActive(true);
+            SelectYellowFlower();
         }
         #endregion
     
-        #region CAM
-        if (_cam.fieldOfView <= 45f && _cam.fieldOfView >= 30f)
-        {
-            _cam.fieldOfView -= Input.GetAxis("Mouse ScrollWheel") * scrollSpeed;
-        }
-        else if (_cam.fieldOfView >= 45f)
-        {
-            _cam.fieldOfView = 45f;
-        }
-        else if (_cam.fieldOfView <= 30f)
-        {
-            _cam.fieldOfView = 30f;
-        }
-        #endregion
+        //zoom
+        _cam.fieldOfView = Mathf.Clamp(_cam.fieldOfView - Input.GetAxis("Mouse ScrollWheel") * scrollSpeed, 30f, 45f);
 
         #region PAUSE
         if (Input.GetKeyUp("escape"))
@@ -110,6 +89,34 @@ public class ControlsManager : MonoBehaviour
         _audioManager.PlayDirtSfx();
         Instantiate(_selectedFlower, hit.point, Quaternion.identity);
     }
+    
+    #region SELECTION
+
+    public void SelectRedFlower()
+    {
+        _selectedFlower = redFlower;
+        redUI.SetActive(true);
+        blueUI.SetActive(false);
+        yellowUI.SetActive(false);
+    }
+
+    public void SelectBlueFlower()
+    {
+        _selectedFlower = blueFlower;
+        redUI.SetActive(false);
+        blueUI.SetActive(true);
+        yellowUI.SetActive(false);
+    }
+
+    public void SelectYellowFlower()
+    {
+        _selectedFlower = yellowFlower;
+        redUI.SetActive(false);
+        blueUI.SetActive(false);
+        yellowUI.SetActive(true);
+    }
+
+    #endregion
 
     #region MENUBUTTONS
 

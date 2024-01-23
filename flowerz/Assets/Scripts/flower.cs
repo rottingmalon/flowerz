@@ -16,6 +16,7 @@ public class Flower : MonoBehaviour
     [SerializeField] private List<string> fusions;
     [SerializeField] private Ease easeMode;
     [SerializeField] private float growDuration;
+    private float _growTimer;
     
     private float _growAmount;
     public string attribute;
@@ -39,6 +40,7 @@ public class Flower : MonoBehaviour
         isFusing = false;
         isDead = false;
         _growAmount = 0f;
+        _growTimer = 0f;
         
         DOTween.Init();
         transform.DOScaleY(0, 0f);
@@ -62,6 +64,11 @@ public class Flower : MonoBehaviour
             if (isDead)
             {
                 DOTween.To(() => _growAmount, x => _growAmount = x, 0f, 4f);
+            }
+
+            if (_growTimer >= 100)
+            {
+                _canFuse = false;
             }
     }
 
@@ -121,6 +128,7 @@ public class Flower : MonoBehaviour
     
     private void ActivatePS()
     {
+        StartCoroutine(IncrementPollenTimer());
         pollen.SetActive(true);
         burstPS.SetActive(true);
         _canFuse = true;
@@ -130,5 +138,14 @@ public class Flower : MonoBehaviour
     {
         Gizmos.color = Color.black;
         Gizmos.DrawWireSphere(transform.position, fuseRadius);
+    }
+
+    private IEnumerator IncrementPollenTimer()
+    {
+        while (_growTimer < 110)
+        {
+            _growTimer += 1;
+            yield return new WaitForSeconds(1);
+        }
     }
 }
