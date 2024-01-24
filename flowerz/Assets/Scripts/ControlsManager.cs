@@ -150,6 +150,17 @@ public class ControlsManager : MonoBehaviour
     {
         Application.Quit();
     }
+    
+    public void BiggerButton(GameObject button)
+    {
+        button.transform.localScale *= new Vector2(1.25f, 1.25f);
+    }
+    
+    public void SmallerButton(GameObject button)
+    {
+        button.transform.localScale = new Vector2(1f, 1f);
+    }
+    
 
     #endregion
 }

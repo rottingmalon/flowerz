@@ -5,14 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-    private void Update()
-    {
-        if (Input.GetKeyUp("f"))
-        {
-            ScreenCapture.CaptureScreenshot("screenshot.png");
-        }
-    }
-
     public void PlayGame()
      {
          Time.timeScale = 1f;
@@ -30,8 +22,18 @@ public class MainMenuManager : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(2);
     }*/
- 
-     public void Quit()
+
+    public void ScaleUpButton(GameObject button)
+    {
+        button.transform.localScale *= new Vector2(1.25f, 1.25f);
+    }
+    
+    public void ScaleDownButton(GameObject button)
+    {
+        button.transform.localScale = new Vector2(0.7879f, 0.7879f);
+    }
+
+    public void Quit()
      {
          Application.Quit();
      }
