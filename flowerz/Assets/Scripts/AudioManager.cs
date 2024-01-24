@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
@@ -9,6 +10,11 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private GameObject dirtSfx;
     [SerializeField] private GameObject fusionObject;
 
+    [Space]
+    [SerializeField] private AudioMixer MasterMixer;
+    [SerializeField] private AudioMixer MusicMixer;
+    [SerializeField] private AudioMixer SFXMixer;
+    
     private AudioSource _dirtSource;
     private AudioSource _fusionSource;
 

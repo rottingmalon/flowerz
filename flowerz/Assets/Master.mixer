@@ -46,6 +46,10 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: 883c3eb1760234646aa600a1a221b692
     name: SoundFade
+  - guid: 4271d4e62cc8ba342a9a5b4fc25aeafd
+    name: MusicVolume
+  - guid: 3240316654c1cca4fad1759d399b979e
+    name: SFXVolume
   m_AudioMixerGroupViews:
   - guids:
     - a7875f0e2d166cf4fa5cf872fb1e6090
