@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
 
-public static class FadeMixerGroup {
-    
+public static class FadeMixerGroup
+{
     public static IEnumerator StartFade(AudioMixer audioMixer, string exposedParam, float duration, float targetVolume)
     {
         float currentTime = 0;
@@ -19,6 +19,7 @@ public static class FadeMixerGroup {
             audioMixer.SetFloat(exposedParam, Mathf.Log10(newVol) * 20);
             yield return null;
         }
+        
         yield break;
     }
 }

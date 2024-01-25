@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ControlsManager : MonoBehaviour
 {
+    [Header("flowerz")]
     [SerializeField] private GameObject redFlower;
     [SerializeField] private GameObject blueFlower;
     [SerializeField] private GameObject yellowFlower;
+    
+    [Header("UI")]
     [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject optionsMenuUI;
+    [Space]
     [SerializeField] private GameObject redUI;
     [SerializeField] private GameObject blueUI;
     [SerializeField] private GameObject yellowUI;
@@ -126,41 +132,45 @@ public class ControlsManager : MonoBehaviour
         Time.timeScale = 1f;
         _isGamePaused = false;
     }
-
     private void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         _isGamePaused = true;
     }
-
     public void MainMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
-
     public void PlayGame()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene(1);
+    }
+    public void ShowOptions()
+    {
+        pauseMenuUI.SetActive(false);
+        optionsMenuUI.SetActive(true);
+    }
+
+    public void HideOptions()
+    {
+        pauseMenuUI.SetActive(true);
+        optionsMenuUI.SetActive(false);
     }
 
     public void Quit()
     {
         Application.Quit();
     }
-    
     public void BiggerButton(GameObject button)
     {
         button.transform.localScale *= new Vector2(1.25f, 1.25f);
     }
-    
     public void SmallerButton(GameObject button)
     {
         button.transform.localScale = new Vector2(1f, 1f);
     }
-    
-
     #endregion
 }

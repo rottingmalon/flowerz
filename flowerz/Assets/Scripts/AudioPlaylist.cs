@@ -9,6 +9,8 @@ using UnityEngine.Serialization;
 
 public class AudioPlaylist : MonoBehaviour
 {
+    [SerializeField] private GameObject gameVolume;
+    
     [Header("Music")]
     [SerializeField] private AudioClip[] audioClips;
     [SerializeField] private AudioMixer audioMixer;
@@ -32,6 +34,7 @@ public class AudioPlaylist : MonoBehaviour
     {
         //Fade
         StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "SoundFade", 20f, 1f));
+        Invoke(nameof(EnableGameVolume), 20f);
         
         _hasPlayedFirstClip = false;
        _audioSource = gameObject.GetComponent<AudioSource>(); 
@@ -148,6 +151,11 @@ public class AudioPlaylist : MonoBehaviour
                 break;
             default: break;
         }
+    }
+
+    private void EnableGameVolume()
+    {
+        gameVolume.SetActive(true);
     }
 
     private IEnumerator WaitForFade()
